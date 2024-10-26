@@ -1,3 +1,8 @@
+let navSidebarExpanded = true;
+let navSidebarOpened = false;
+let chatWidgetOpened = false;
+let notificationsOpened = false;
+
 $(document).ready(function () {
     // Initialize Slick carousel on Navbar
     $('.nav-carousel').slick({
@@ -105,13 +110,13 @@ $('.btn-switch').on('click', function (params) {
 function openModal(target) {
     if (target == 'signin' || target == 'signup') {
         $('.nav-' + target).tab('show');
-        if($('body').width() > 576){
+        if ($('body').width() > 576) {
             $('#signinSignup').modal('show');
-        }else{
+        } else {
             $('#signinSignup').addClass('show');
             $('#signinSignup').show();
             $('body').css({
-                'overflow':'hidden'
+                'overflow': 'hidden'
             });
         }
     } else if (target == 'pay') {
@@ -122,10 +127,10 @@ function openModal(target) {
         $('#offerModal').modal('show');
     }
 }
-$('.ss-modal .btn-modal-close').on('click',function () {
+$('.ss-modal .btn-modal-close').on('click', function () {
     $('#signinSignup').removeClass('show');
-    $('#signinSignup').hide();$('body').css({
-        'overflow':'auto'
+    $('#signinSignup').hide(); $('body').css({
+        'overflow': 'auto'
     });
 })
 function selectPayCard() {
@@ -222,21 +227,91 @@ function changeBalance() {
         label.html('Balance');
     }
 }
+
+function checkLayout() {
+    let mainWidth = 0;
+    if (chatWidgetOpened) {
+        mainWidth = 360;
+    }
+    if (notificationsOpened) {
+        mainWidth = 360;
+    }
+    if (navSidebarExpanded) {
+        mainWidth = mainWidth + 290;
+    }else{
+        mainWidth = mainWidth + 100;
+    }
+    if (navSidebarOpened) {
+        mainWidth = mainWidth + 0;
+        $('body').css({
+            'overflow-y': 'hidden'
+        });
+    }else{
+        $('body').css({
+            'overflow-y': 'auto'
+        });
+    }
+
+    $('main').css({
+        'width': 'calc(100% - ' + mainWidth + 'px)'
+    });
+}
 function chatWindow() {
-    $('.chat-widget').toggleClass('chat-shown');
-    if ($('.chat-widget').hasClass('chat-shown')) {
+    if(notificationsOpened){
+        notificationsWindow();
+    }
+    $('#chat-widget').toggleClass('chat-shown');
+    if ($('#chat-widget').hasClass('chat-shown')) {
         $('.nci-show').show();
         $('.nci-hide').hide();
-        $('main').css({
-            'width': 'calc(100% - 300px)'
-        });
+        chatWidgetOpened = true;
     } else {
         $('.nci-show').hide();
         $('.nci-hide').show();
-        $('main').css({
-            'width': '100%'
-        });
+        chatWidgetOpened = false;
     }
+    checkLayout();
+}
+
+function notificationsWindow() {
+    if(chatWidgetOpened){
+        chatWindow();
+    }
+    $('#notifications-widget').toggleClass('chat-shown');
+    if ($('#notifications-widget').hasClass('chat-shown')) {
+        $('.nci-show').show();
+        $('.nci-hide').hide();
+        notificationsOpened = true;
+    } else {
+        $('.nci-show').hide();
+        $('.nci-hide').show();
+        notificationsOpened = false;
+    }
+    checkLayout();
+}
+
+function sideNavExpand() {
+    $('body').toggleClass('side-nav-expanded');
+    if ($('body').hasClass('side-nav-expanded')) {
+        navSidebarExpanded = true;
+    } else {
+        navSidebarExpanded = false;
+    }
+
+    checkLayout();
+
+}
+
+function sidebarMenu() {
+    $('.sidebar').toggleClass('show-sidebar');
+    if ($('.sidebar').hasClass('show-sidebar')) {
+        navSidebarOpened = true;
+    } else {
+        navSidebarOpened = false;
+    }
+
+    checkLayout();
+
 }
 
 
@@ -255,15 +330,19 @@ $(document).ready(function () {
             $('#offers-main').addClass('offers-filtered');
         }
     });
-
-    // $('.os-dropdown .item-checkbox').on('change', function () {
-    //     console.log($('#offers-main').hasClass('offers-filtered'));
-    //     if (!$('#offers-main').hasClass('offers-filtered')) {
-    //         console.log('test');
-    //         $('#offers-main').addClass('offers-filtered');
-    //     }
-    //     updateSelectedOS();
-    // });
+    checkLayout();
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            // The window has been scrolled down more than 100px
+            $('.chat-widget').css({
+                'top': '0px'
+            })
+        }else{
+            $('.chat-widget').css({
+                'top': '100px'
+            })
+        }
+    });
 
     function updateSelectedOS() {
         var selectedItems = [];
@@ -278,9 +357,26 @@ $(document).ready(function () {
     if ($('.os-dropdown')) {
         updateSelectedOS();
     }
+
+    $('.offer').each(function () {
+        var offer = $(this);
+        offer.on('click', function () {
+            openModal('offer');
+        });
+    });
 });
+function checkSwitch() {
+    $('.form-switch').each(function () {
+        if($(this).find('.form-check-input').is(':checked')){
+            $(this).closest('.form-switch').addClass('checked-switch');
+        }else{
+            $(this).closest('.form-switch').removeClass('checked-switch');
+        }
+    })
+}
 
 $(document).ready(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip(); 
     if ($.fn.select2) {
         $('#cs1').select2({
             templateResult: formatOption, // Customize the appearance of each option
@@ -295,7 +391,6 @@ $(document).ready(function () {
     } else {
         console.error("Select2 is not loaded.");
     }
-
     // Custom function to format each option
     function formatOption(option) {
         var $option = $(option.element);
@@ -356,12 +451,13 @@ $(document).ready(function () {
         }
     })
 
-    if($('[data-bs-toggle="tooltip"]')){
+    if ($('[data-bs-toggle="tooltip"]')) {
         $('[data-bs-toggle="tooltip"]').tooltip();
     }
 
     $('.navbar-dropdowns .dropdown-item').on('click', function (e) {
         e.stopPropagation();
     })
+    checkSwitch();
 });
 

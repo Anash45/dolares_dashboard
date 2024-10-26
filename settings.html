@@ -368,7 +368,7 @@
                     </div>
                 </div>
             </aside>
-            <main>
+            <main class="px-3">
                 <div class="nav-down">
                     <div class="p-2">
                         <div class="d-flex align-items-center justify-content-between">
@@ -489,9 +489,93 @@
                         </div>
                     </div>
                 </div>
-                <div style="height: 1000px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-                    laboriosam natus expedita quasi nam veritatis voluptatum magni eaque a eum accusamus quo non
-                    repellendus nostrum aperiam quis illo, ipsum vel? </div>
+                <section class="settings-sec py-5">
+                    <div class="container">
+                        <div class="nav-tabs-cont px-4 mb-4">
+                            <h3 class="mb-0 f-26p fw-semibold poppins text-white">Settings</h3>
+                            <div class="d-flex align-items-center gap-sm-4 gap-3">
+                                <div class="form-check form-switch px-4 py-3 position-relative rounded-pill">
+                                    <input class="form-check-input" onchange="checkSwitch()" type="checkbox" id="showUSD">
+                                    <label class="form-check-label" for="showUSD">Show USD</label>
+                                </div>
+                                <div class="form-check form-switch px-4 py-3 position-relative rounded-pill">
+                                    <input class="form-check-input" onchange="checkSwitch()" checked type="checkbox" id="liveStats">
+                                    <label class="form-check-label" for="liveStats">Live Stats</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-boxes">
+                            <div class="setting-box sb-1 d-flex flex-column gap-3">
+                                <div class="row px-sm-4 align-items-center">
+                                    <div class="col-lg-3">
+                                        <label class="sb-label d-block mb-lg-0 mb-3 ps-2">Display Name</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="position-relative">
+                                            <input type="text" name="name" id="name" class="sbi-inp form-control"
+                                                value="Adeel Raza">
+                                            <button type="button" class="btn sb-btn">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-sm-4 align-items-center">
+                                    <div class="col-lg-3">
+                                        <label class="sb-label d-block mb-lg-0 mb-3 ps-2">Email Address</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="position-relative">
+                                            <input type="text" name="email" id="email" class="sbi-inp form-control"
+                                                value="asiadeel9@gmail.com">
+                                            <button type="button" class="btn sb-btn">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-sm-4 align-items-center">
+                                    <div class="col-lg-3">
+                                        <label class="sb-label d-block mb-lg-0 mb-3 ps-2">Profile Visibility</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="position-relative">
+                                            <select name="visibility" id="visibility" class="sbi-inp form-control">
+                                                <option value="Private">Private</option>
+                                                <option value="Public">Public</option>
+                                            </select>
+                                            <button type="button" class="btn sb-btn">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-sm-4 align-items-center">
+                                    <div class="col-lg-3">
+                                        <label class="sb-label d-block mb-lg-0 mb-3 ps-2">Language</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="position-relative">
+                                            <select name="language" id="language" class="sbi-inp form-control">
+                                                <option value="English">English</option>
+                                                <option value="German">German</option>
+                                            </select>
+                                            <button type="button" class="btn sb-btn">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting-box sb-2 gap-4 d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <h3 class="mb-0 page-title fw-semibold text-white">Two-Factor Authentication</h3>
+                                    <p class="mb-0 sb-desc fw-medium f-14p mb-2">Activate your 2FA to make your account more secure.</p>
+                                </div>
+                                <button class="btn fw-semibold sb-btn-primary text-white p-4 rounded-pill w-100" type="button">Activate</button>
+                            </div>
+                            <div class="setting-box sb-3 gap-4 d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <h3 class="mb-0 page-title fw-semibold text-white">Danger Zone</h3>
+                                    <p class="mb-0 sb-desc fw-medium f-14p mb-2">Once you delete your account, there is no going back. Please be certain.</p>
+                                </div>
+                                <button class="btn fw-semibold sb-btn-danger text-white p-4 rounded-pill w-100" type="button">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
         <footer class="pt-4">
@@ -901,6 +985,189 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade offer-modal" id="offerModal" tabindex="-1" aria-labelledby="payModalLabel"
+            aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header p-0">
+                        <button type="button" class="btn ms-auto btn-modal-close btn-circle-close"
+                            data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0 poppins">
+                        <div class="om-top">
+                            <div class="d-flex align-items-center gap-4 pb-4 flex-lg-row flex-column">
+                                <img src="./assets/img/om-top-img.png" alt="DP" height="185" width="185"
+                                    class="rounded-lg">
+                                <div class="d-flex flex-column gap-2">
+                                    <h3 class="fw-bold f-30p mb-0 lh-sm text-white text-lg-start text-center">Discovery
+                                        (DE) (Incentive)</h3>
+                                    <ul class="nav nav-pills mb-0 justify-content-lg-start justify-content-center">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" type="button">Free Trial</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" type="button">Signups</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" type="button">Other</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 stats text-center flex-lg-nowrap flex-wrap">
+                                <div
+                                    class="um-stat rounded-lg flex-grow-1 d-flex gap-2 text-center align-items-center flex-column justify-content-center p-2">
+                                    <span class="f-14p text-orange fw-medium"> Reward </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./assets/img/coin.svg" alt="Coin" height="26">
+                                        <span class="text-white f-18p fw-semibold">1275 Coin</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="um-stat rounded-lg flex-grow-1 d-flex gap-2 text-center align-items-center flex-column justify-content-center p-2">
+                                    <span class="f-14p text-orange fw-medium"> Platform </span>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <a href="#">
+                                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z"
+                                                    fill="#15132A" />
+                                                <g clip-path="url(#clip0_38_10)">
+                                                    <path d="M12 14.5938V21.7812H22.5V13.3359L12 14.5938Z"
+                                                        fill="#67708C" />
+                                                    <path d="M24 13.1562V21.7812H36V11.7188L24 13.1562Z"
+                                                        fill="#67708C" />
+                                                    <path d="M24 23.2188V31.8438L36 33.2812V23.2188H24Z"
+                                                        fill="#67708C" />
+                                                    <path d="M12 23.2188V30.4062L22.5 31.6641V23.2188H12Z"
+                                                        fill="#67708C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_38_10">
+                                                        <rect width="24" height="23" fill="white"
+                                                            transform="translate(12 11)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22.5 46C34.9264 46 45 35.7025 45 23C45 10.2975 34.9264 0 22.5 0C10.0736 0 0 10.2975 0 23C0 35.7025 10.0736 46 22.5 46Z"
+                                                    fill="#15132A" />
+                                                <g clip-path="url(#clip0_38_11)">
+                                                    <path
+                                                        d="M28.3117 9C28.3699 9 28.4281 9 28.4896 9C28.6323 10.9041 27.9594 12.3268 27.1415 13.3571C26.339 14.3803 25.2401 15.3727 23.4628 15.2221C23.3442 13.3453 24.0183 12.0281 24.835 11.0001C25.5925 10.0422 26.9812 9.1897 28.3117 9Z"
+                                                        fill="#67708C" />
+                                                    <path
+                                                        d="M33.6921 28.8187C33.6921 28.8376 33.6921 28.8542 33.6921 28.872C33.1926 30.5058 32.4802 31.906 31.6107 33.2054C30.817 34.3851 29.8444 35.9727 28.1077 35.9727C26.607 35.9727 25.6102 34.9305 24.0722 34.9021C22.4453 34.8736 21.5506 35.7735 20.0631 35.9999C19.8929 35.9999 19.7227 35.9999 19.5559 35.9999C18.4636 35.8292 17.5821 34.8949 16.9398 34.0532C15.0462 31.5657 13.5828 28.3527 13.3105 24.241C13.3105 23.8379 13.3105 23.436 13.3105 23.0329C13.4258 20.0902 14.7498 17.6976 16.5095 16.5381C17.4382 15.9216 18.715 15.3963 20.1366 15.6311C20.7459 15.733 21.3683 15.9583 21.9139 16.1812C22.431 16.3958 23.0776 16.7764 23.6902 16.7562C24.1051 16.7432 24.5179 16.5096 24.9362 16.3448C26.1613 15.867 27.3623 15.3193 28.9453 15.5765C30.8478 15.8872 32.198 16.8001 33.0324 18.2086C31.423 19.3148 30.1507 20.9818 30.368 23.8284C30.5612 26.4142 31.9532 27.9271 33.6921 28.8187Z"
+                                                        fill="#67708C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_38_11">
+                                                        <rect width="25" height="27" fill="white"
+                                                            transform="translate(11 9)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z"
+                                                    fill="#15132A" />
+                                                <g clip-path="url(#clip0_38_12)">
+                                                    <path
+                                                        d="M25.9232 36C26.8594 36 27.6758 35.2419 27.6758 34.3726V30.5718H28.846C29.5483 30.5718 30.0163 30.1371 30.0163 29.4852V18.6296H15.9844V29.4852C15.9844 30.1372 16.4525 30.5719 17.1546 30.5719H18.325V34.3727C18.325 35.242 19.1412 36.0001 20.0776 36.0001C21.0137 36.0001 21.83 35.242 21.83 34.3727V30.5719H24.1706V34.3727C24.1705 35.2419 24.987 36 25.9232 36Z"
+                                                        fill="#67708C" />
+                                                    <path
+                                                        d="M32.9382 29.4852C33.8744 29.4852 34.6906 28.7272 34.6906 27.8578V20.2564C34.6906 19.3916 33.8744 18.6296 32.9382 18.6296C32.0019 18.6296 31.1855 19.3916 31.1855 20.2564V27.8578C31.1855 28.7271 32.0018 29.4852 32.9382 29.4852Z"
+                                                        fill="#67708C" />
+                                                    <path
+                                                        d="M13.061 29.4852C13.9973 29.4852 14.8137 28.7272 14.8137 27.8578V20.2564C14.8137 19.3916 13.9974 18.6296 13.061 18.6296C12.1248 18.6296 11.3086 19.3916 11.3086 20.2564V27.8578C11.3086 28.7271 12.1248 29.4852 13.061 29.4852Z"
+                                                        fill="#67708C" />
+                                                    <path
+                                                        d="M28.6119 10.164C28.3779 9.94534 28.0296 9.94534 27.7957 10.164L26.2261 11.6166L26.1537 11.6837C25.223 11.251 24.1795 11.0349 23.0175 11.0328C23.0118 11.0328 23.0062 11.0326 23.0005 11.0326H23.0003C22.9944 11.0326 22.989 11.0328 22.9831 11.0328C21.8212 11.0349 20.7777 11.251 19.8471 11.6837L19.7745 11.6166L18.205 10.164C17.9709 9.94534 17.6227 9.94534 17.3888 10.164C17.1546 10.3814 17.1546 10.7041 17.3888 10.9213L18.9071 12.3314C18.4178 12.6347 17.9742 13.0059 17.5884 13.4304C16.6648 14.4469 16.0758 15.7699 15.9947 17.2034C15.994 17.2183 15.9924 17.2331 15.9917 17.248C15.9867 17.3456 15.9844 17.4437 15.9844 17.5422H30.0163C30.0163 17.4437 30.0138 17.3456 30.009 17.248C30.0082 17.2331 30.0067 17.2183 30.0057 17.2034C29.9249 15.7699 29.3356 14.4469 28.412 13.4305C28.0264 13.006 27.5826 12.6348 27.0934 12.3315L28.6119 10.9214C28.846 10.7041 28.846 10.3814 28.6119 10.164ZM20.0754 15.6448C19.5912 15.6448 19.1987 15.2804 19.1987 14.8308C19.1987 14.3812 19.5912 14.0167 20.0754 14.0167C20.5595 14.0167 20.952 14.3812 20.952 14.8308C20.952 15.2804 20.5595 15.6448 20.0754 15.6448ZM25.9253 15.6448C25.4411 15.6448 25.0486 15.2804 25.0486 14.8308C25.0486 14.3812 25.4411 14.0167 25.9253 14.0167C26.4095 14.0167 26.802 14.3812 26.802 14.8308C26.802 15.2804 26.4095 15.6448 25.9253 15.6448Z"
+                                                        fill="#67708C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_38_12">
+                                                        <rect width="28" height="26" fill="white"
+                                                            transform="translate(9 10)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="um-stat rounded-lg flex-grow-1 d-flex gap-2 text-center align-items-center flex-column justify-content-center p-2">
+                                    <span class="f-14p text-orange fw-medium"> Provider </span>
+                                    <span class="f-18p fw-semibold text-white"> AdGateMedia </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="om-bottom py-5 px-sm-5 px-4 d-flex flex-column gap-4">
+                            <div class="px-lg-5">
+                                <h3 class="mb-1 text-white d-flex align-items-center gap-1 f-26p fw-semibold">
+                                    <span>About</span> <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.5 22.2959C17.4624 22.2959 22.2959 17.4624 22.2959 11.5C22.2959 5.5376 17.4624 0.704102 11.5 0.704102C5.5376 0.704102 0.704102 5.5376 0.704102 11.5C0.704102 17.4624 5.5376 22.2959 11.5 22.2959Z"
+                                            fill="#FCC33B" />
+                                        <path
+                                            d="M11.5008 20.5592C13.0043 20.5592 14.2232 18.8149 14.2232 16.6633C14.2232 14.5116 13.0043 12.7673 11.5008 12.7673C9.9972 12.7673 8.77832 14.5116 8.77832 16.6633C8.77832 18.8149 9.9972 20.5592 11.5008 20.5592Z"
+                                            fill="#722717" />
+                                        <path
+                                            d="M8.87224 7.69798L9.90489 6.66532C10.2335 6.33675 10.2335 5.77349 9.90489 5.44491C9.57632 5.11634 9.01306 5.11634 8.68449 5.44491L7.65183 6.47757L6.61918 5.44491C6.29061 5.11634 5.72734 5.11634 5.39877 5.44491C5.0702 5.77349 5.0702 6.33675 5.39877 6.66532L6.43143 7.69798L5.39877 8.73063C5.0702 9.0592 5.0702 9.62247 5.39877 9.95104C5.58653 10.1388 5.77428 10.1857 6.00898 10.1857C6.24367 10.1857 6.43143 10.0919 6.61918 9.95104L7.65183 8.91838L8.68449 9.95104C8.87224 10.1388 9.06 10.1857 9.29469 10.1857C9.52938 10.1857 9.71714 10.0919 9.90489 9.95104C10.2335 9.62247 10.2335 9.0592 9.90489 8.73063L8.87224 7.69798Z"
+                                            fill="#722717" />
+                                        <path
+                                            d="M16.5695 7.69798L17.6022 6.66532C17.9307 6.33675 17.9307 5.77349 17.6022 5.44491C17.2736 5.11634 16.7103 5.11634 16.3818 5.44491L15.3491 6.47757L14.3164 5.44491C13.9879 5.11634 13.4246 5.11634 13.096 5.44491C12.7675 5.77349 12.7675 6.33675 13.096 6.66532L14.1287 7.69798L13.096 8.73063C12.7675 9.0592 12.7675 9.62247 13.096 9.95104C13.2838 10.1388 13.4715 10.1857 13.7062 10.1857C13.9409 10.1857 14.1287 10.0919 14.3164 9.95104L15.3491 8.91838L16.3818 9.95104C16.5695 10.1388 16.7573 10.1857 16.992 10.1857C17.2267 10.1857 17.4144 10.0919 17.6022 9.95104C17.9307 9.62247 17.9307 9.0592 17.6022 8.73063L16.5695 7.69798Z"
+                                            fill="#722717" />
+                                        <path
+                                            d="M11.5001 20.5593C12.3296 20.5593 13.0021 19.6767 13.0021 18.5879C13.0021 17.4991 12.3296 16.6165 11.5001 16.6165C10.6705 16.6165 9.99805 17.4991 9.99805 18.5879C9.99805 19.6767 10.6705 20.5593 11.5001 20.5593Z"
+                                            fill="#EA302E" />
+                                        <path
+                                            d="M11.5003 22.5307C5.3983 22.5307 0.469727 17.6021 0.469727 11.5001C0.469727 5.39805 5.3983 0.469482 11.5003 0.469482C17.6024 0.469482 22.531 5.39805 22.531 11.5001C22.531 17.6021 17.6024 22.5307 11.5003 22.5307ZM11.5003 0.93887C5.67993 0.93887 0.939114 5.67969 0.939114 11.5001C0.939114 17.3205 5.67993 22.0613 11.5003 22.0613C17.3207 22.0613 22.0616 17.3205 22.0616 11.5001C22.0616 5.67969 17.3207 0.93887 11.5003 0.93887Z"
+                                            fill="black" />
+                                        <path
+                                            d="M11.5001 20.7939C9.85725 20.7939 8.54297 18.9164 8.54297 16.6633C8.54297 14.3633 9.85725 12.5327 11.5001 12.5327C13.143 12.5327 14.4573 14.4103 14.4573 16.6633C14.4573 18.9164 13.143 20.7939 11.5001 20.7939ZM11.5001 13.0021C10.1389 13.0021 9.01236 14.645 9.01236 16.6633C9.01236 18.6817 10.1389 20.3246 11.5001 20.3246C12.8613 20.3246 13.9879 18.6817 13.9879 16.6633C13.9879 14.645 12.8613 13.0021 11.5001 13.0021Z"
+                                            fill="black" />
+                                        <path
+                                            d="M11.5004 20.7941C10.5616 20.7941 9.76367 19.8084 9.76367 18.588C9.76367 17.3675 10.5616 16.3818 11.5004 16.3818C12.4392 16.3818 13.2371 17.3675 13.2371 18.588C13.2371 19.8084 12.4392 20.7941 11.5004 20.7941ZM11.5004 16.8982C10.7963 16.8982 10.2331 17.6492 10.2331 18.6349C10.2331 19.5737 10.7963 20.3716 11.5004 20.3716C12.2045 20.3716 12.7678 19.6206 12.7678 18.6349C12.7678 17.6492 12.2045 16.8982 11.5004 16.8982Z"
+                                            fill="black" />
+                                        <path
+                                            d="M9.29394 10.4205C9.0123 10.4205 8.73067 10.3266 8.54292 10.0919L7.69802 9.247L6.85312 10.0919C6.43067 10.5143 5.72659 10.5143 5.30414 10.0919C4.88169 9.66945 4.88169 8.96537 5.30414 8.54292L6.14904 7.69802L5.30414 6.85312C4.88169 6.43067 4.88169 5.72659 5.30414 5.30414C5.72659 4.88169 6.43067 4.88169 6.85312 5.30414L7.69802 6.14904L8.54292 5.30414C8.96537 4.88169 9.66945 4.88169 10.0919 5.30414C10.5143 5.72659 10.5143 6.43067 10.0919 6.85312L9.247 7.69802L10.0919 8.54292C10.5143 8.96537 10.5143 9.66945 10.0919 10.0919C9.8572 10.2797 9.57557 10.4205 9.29394 10.4205ZM7.65108 8.58986L8.87149 9.81026C9.10618 10.045 9.52863 10.045 9.76332 9.81026C9.99802 9.57557 9.99802 9.20006 9.76332 8.91843L8.54292 7.69802L9.76332 6.47761C9.99802 6.24292 9.99802 5.86741 9.76332 5.58577C9.52863 5.35108 9.10618 5.35108 8.87149 5.58577L7.65108 6.80618L6.43067 5.63271C6.19598 5.39802 5.77353 5.39802 5.53884 5.63271C5.30414 5.86741 5.30414 6.24292 5.53884 6.52455L6.75924 7.74496L5.58577 8.91843C5.35108 9.15312 5.35108 9.52863 5.58577 9.81026C5.82047 10.045 6.24292 10.045 6.47761 9.81026L7.65108 8.58986Z"
+                                            fill="black" />
+                                        <path
+                                            d="M16.9922 10.4205C16.7105 10.4205 16.4289 10.3266 16.2412 10.0919L15.3963 9.247L14.5514 10.0919C14.1289 10.5143 13.4248 10.5143 13.0024 10.0919C12.5799 9.66945 12.5799 8.96537 13.0024 8.54292L13.8473 7.69802L13.0024 6.85312C12.5799 6.43067 12.5799 5.72659 13.0024 5.30414C13.4248 4.88169 14.1289 4.88169 14.5514 5.30414L15.3963 6.14904L16.2412 5.30414C16.6636 4.88169 17.3677 4.88169 17.7901 5.30414C18.2126 5.72659 18.2126 6.43067 17.7901 6.85312L16.8983 7.69802L17.7432 8.54292C18.1656 8.96537 18.1656 9.66945 17.7432 10.0919C17.5554 10.2797 17.2738 10.4205 16.9922 10.4205ZM15.3493 8.58986L16.5697 9.81026C16.8044 10.045 17.2269 10.045 17.4616 9.81026C17.6963 9.57557 17.6963 9.20006 17.4616 8.91843L16.2412 7.69802L17.4616 6.47761C17.6963 6.24292 17.6963 5.86741 17.4616 5.58577C17.2269 5.35108 16.8044 5.35108 16.5697 5.58577L15.3493 6.80618L14.1289 5.63271C13.8942 5.39802 13.4718 5.39802 13.2371 5.63271C13.0024 5.86741 13.0024 6.24292 13.2371 6.52455L14.4575 7.74496L13.284 8.91843C13.0493 9.15312 13.0493 9.52863 13.284 9.81026C13.5187 10.045 13.9412 10.045 14.1759 9.81026L15.3493 8.58986Z"
+                                            fill="black" />
+                                    </svg>
+                                </h3>
+                                <p class="mb-3 om-desc">With decades of maintenance of way expertise and experience, no
+                                    one knows the rail like Loram. Today, with our Loram Technologies business group,
+                                    we're leveraging our accumulated data, analytics and maintenance algorithms with
+                                    advanced inspecti</p>
+                            </div>
+                            <div class="px-lg-5 px-4 om-bg py-4 mb-3">
+                                <h3 class="mb-1 text-white d-flex align-items-center gap-1 f-26p fw-semibold">
+                                    <span>Requerments</span>
+                                </h3>
+                                <p class="mb-0 om-desc">With decades of maintenance of way expertise and experience, no
+                                    one knows the rail like Loram. Today, with our Loram Technologies business group,
+                                </p>
+                            </div>
+                            <button class="btn om-btn rounded-pill p-4 fw-bold f-22p text-white">Start Offer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <aside class="chat-widget inter" id="chat-widget">
             <div class="chat-opener" onclick="chatWindow()">
                 <i class="fa fa-arrow-left co-left"></i>
@@ -1016,8 +1283,7 @@
             <div class="nw-header p-4">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center gap-2">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.5833 17C12.2873 18.15 11.2433 19 10.0006 19C8.75797 19 7.71397 18.15 7.41797 17H12.5833Z"
                                 fill="#A6A4BC" />
@@ -1048,7 +1314,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                         <a href="#" class="d-flex flex-column gap-2 ps-4 pe-4 py-4 noti-msg poppins">
@@ -1058,7 +1325,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                         <a href="#" class="d-flex flex-column gap-2 ps-4 pe-4 py-4 noti-msg poppins">
@@ -1068,7 +1336,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                         <a href="#" class="d-flex flex-column gap-2 ps-4 pe-4 py-4 noti-msg poppins">
@@ -1078,7 +1347,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                         <a href="#" class="d-flex flex-column gap-2 ps-4 pe-4 py-4 noti-msg poppins">
@@ -1088,7 +1358,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                         <a href="#" class="d-flex flex-column gap-2 ps-4 pe-4 py-4 noti-msg poppins">
@@ -1098,7 +1369,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                         <a href="#" class="d-flex flex-column gap-2 ps-4 pe-4 py-4 noti-msg poppins">
@@ -1108,7 +1380,8 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between gap-2">
                                 <span class="fw-medium noti-small-text noti-name f-14p">waynegordon163</span>
-                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
+                                <span class="fw-semibold noti-title text-white f-15p d-flex align-items-center"><img
+                                        src="./assets/img/coin.svg" height="13" alt="Coin"><span>5</span></span>
                             </div>
                         </a>
                     </div>
