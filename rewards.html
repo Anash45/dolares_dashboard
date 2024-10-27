@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=1">
     </head>
 
     <body class="side-nav-expanded">
@@ -490,7 +490,7 @@
                     </div>
                 </div>
                 <section class="rewards-sec py-5">
-                    <div class="container">
+                    <div class="container pe-xxl-5">
                         <div class="rewards-top d-flex flex-column gap-4 align-items-center">
                             <div class="d-flex flex-column gap-1 align-items-center text-center">
                                 <h2 class="page-title mb-0 fw-semibold text-white">Rewards</h2>
@@ -784,15 +784,18 @@
                                 </div>
                             </div>
                             <div class="site-card">
-                                <div class="sc-bottom px-md-5 px-4 d-flex align-items-center gap-4 justify-content-between flex-xxl-row flex-column">
-                                    <div class="d-flex flex-column gap-0 align-items-xxl-start align-items-center text-xxl-start text-center">
+                                <div
+                                    class="sc-bottom px-md-5 px-4 d-flex align-items-center gap-4 justify-content-between flex-xxl-row flex-column">
+                                    <div
+                                        class="d-flex flex-column gap-0 align-items-xxl-start align-items-center text-xxl-start text-center">
                                         <h3 class="f-28p fw-semibold d-flex align-items-bottom mb-0 gap-0 text-white">
                                             <span>Join our community</span>
                                         </h3>
                                         <p class="mb-0 lato page-desc">Lorem ipsum dolor sit amet,</p>
                                     </div>
                                     <div class="d-flex sc-card-socials flex-lg-nowrap flex-wrap">
-                                        <a href="#" class="scc-social d-flex align-items-center gap-1 flex-grow-1 justify-content-center">
+                                        <a href="#"
+                                            class="scc-social d-flex align-items-center gap-1 flex-grow-1 justify-content-center">
                                             <svg width="9" height="20" viewBox="0 0 9 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -801,18 +804,24 @@
                                             </svg>
                                             <span class="mt-1">Follow us Facebook</span>
                                         </a>
-                                        <a href="#" class="scc-social d-flex align-items-center gap-1 flex-grow-1 justify-content-center">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5.88696 19.9419C5.05621 19.9242 4.23448 19.7668 3.45605 19.4761C2.79057 19.2196 2.18603 18.8266 1.68127 18.3228C1.17652 17.8189 0.782682 17.2149 0.525024 16.5498C0.232033 15.7734 0.0740456 14.9528 0.0579834 14.123C0.0109834 13.064 0 12.723 0 10.063V9.93701C0 7.28001 0.0110117 6.937 0.0620117 5.875C0.0787533 5.04586 0.235948 4.22578 0.526978 3.44922C0.785281 2.78454 1.17941 2.18105 1.68408 1.67725C2.18875 1.17344 2.79289 0.780117 3.45801 0.522949C4.23632 0.231961 5.05828 0.0748994 5.88904 0.0581055C6.95704 0.0111055 7.29794 0 10.0179 0C12.7379 0 13.078 0.0110117 14.151 0.0620117C14.9817 0.0789015 15.8037 0.235961 16.582 0.526855C17.249 0.778932 17.8537 1.17221 18.355 1.6792C18.8664 2.17844 19.2617 2.78401 19.5129 3.45312C19.805 4.22911 19.963 5.04896 19.98 5.87793C19.986 6.04493 19.992 6.19391 19.999 6.33691V13.4639C19.991 13.6689 19.9819 13.8761 19.9709 14.1221C19.9544 14.9516 19.7972 15.772 19.506 16.5488C19.2483 17.2138 18.8545 17.8179 18.3497 18.3218C17.845 18.8257 17.2404 19.2185 16.575 19.4751C15.7967 19.7664 14.9749 19.9237 14.144 19.9409C13.076 19.9869 12.735 19.998 10.016 19.998C7.29699 19.998 6.95496 19.9889 5.88696 19.9419ZM5.97998 1.87598C5.34486 1.88335 4.71574 1.99994 4.12 2.22021C3.68604 2.38044 3.29318 2.63487 2.96997 2.96582C2.63498 3.28647 2.3778 3.67991 2.21802 4.11523C1.99796 4.7093 1.88161 5.33674 1.87402 5.97021C1.82702 7.02221 1.81494 7.34123 1.81494 10.0112C1.81494 12.6812 1.82702 12.9958 1.87402 14.0498C1.88189 14.6839 1.99823 15.3124 2.21802 15.9072C2.37936 16.3403 2.6344 16.7322 2.96497 17.0552C3.28841 17.3868 3.68203 17.6413 4.11694 17.8008C4.71211 18.0219 5.34107 18.1385 5.97595 18.145C7.02995 18.191 7.34995 18.2031 10.0229 18.2031C12.6959 18.2031 13.0149 18.192 14.0699 18.145C14.7051 18.1379 15.3344 18.0213 15.9301 17.8008C16.3616 17.6339 16.7535 17.379 17.0807 17.0518C17.4079 16.7246 17.6631 16.3325 17.83 15.9009C18.0517 15.3073 18.1681 14.6795 18.174 14.0459C18.221 12.9899 18.233 12.6778 18.233 10.0098C18.233 7.34177 18.221 7.02524 18.174 5.96924C18.1676 5.33565 18.0512 4.70751 17.83 4.11377C17.6694 3.67956 17.4135 3.28698 17.0811 2.96484C16.7592 2.63228 16.3659 2.37758 15.931 2.21924C15.3359 1.99813 14.7069 1.88151 14.072 1.875C13.018 1.828 12.702 1.81592 10.025 1.81592C7.34802 1.81592 7.03698 1.82898 5.97998 1.87598ZM4.87195 10.001C4.87037 8.98266 5.17088 7.98663 5.73547 7.13916C6.30007 6.29169 7.10347 5.63103 8.04382 5.24023C8.98417 4.84944 10.0192 4.74615 11.0182 4.94385C12.0171 5.14154 12.935 5.63108 13.6556 6.35059C14.3763 7.07009 14.8673 7.9872 15.0665 8.98584C15.2658 9.98448 15.1644 11.02 14.775 11.9609C14.3857 12.9019 13.726 13.7061 12.8794 14.272C12.0328 14.8379 11.0374 15.1401 10.019 15.1401C8.65494 15.1409 7.34632 14.5997 6.3811 13.6357C5.41588 12.6718 4.87301 11.3651 4.87195 10.001ZM6.68103 10.001C6.67984 10.6616 6.87467 11.308 7.24084 11.8579C7.60702 12.4078 8.12802 12.8367 8.73804 13.0903C9.34805 13.344 10.0196 13.4109 10.6677 13.2827C11.3158 13.1546 11.9113 12.8368 12.3789 12.3701C12.8465 11.9034 13.1651 11.3085 13.2944 10.6606C13.4238 10.0128 13.3579 9.34094 13.1053 8.73047C12.8528 8.12 12.4248 7.59812 11.8756 7.23096C11.3264 6.8638 10.6807 6.66797 10.02 6.66797C9.13551 6.66744 8.28699 7.01828 7.66089 7.64307C7.03479 8.26785 6.68236 9.11647 6.68103 10.001ZM14.1689 4.66113C14.1689 4.4238 14.2394 4.19148 14.3712 3.99414C14.5031 3.7968 14.6905 3.64307 14.9098 3.55225C15.1291 3.46142 15.3704 3.43758 15.6031 3.48389C15.8359 3.53019 16.0497 3.64468 16.2175 3.8125C16.3854 3.98032 16.4996 4.19398 16.5459 4.42676C16.5922 4.65953 16.5685 4.90085 16.4777 5.12012C16.3868 5.33939 16.233 5.52683 16.0356 5.65869C15.8383 5.79055 15.6064 5.86084 15.369 5.86084C15.0508 5.86084 14.7456 5.73481 14.5205 5.50977C14.2955 5.28472 14.1689 4.97939 14.1689 4.66113Z" fill="#8B99AD"/>
-                                                </svg>
-                                                
+                                        <a href="#"
+                                            class="scc-social d-flex align-items-center gap-1 flex-grow-1 justify-content-center">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.88696 19.9419C5.05621 19.9242 4.23448 19.7668 3.45605 19.4761C2.79057 19.2196 2.18603 18.8266 1.68127 18.3228C1.17652 17.8189 0.782682 17.2149 0.525024 16.5498C0.232033 15.7734 0.0740456 14.9528 0.0579834 14.123C0.0109834 13.064 0 12.723 0 10.063V9.93701C0 7.28001 0.0110117 6.937 0.0620117 5.875C0.0787533 5.04586 0.235948 4.22578 0.526978 3.44922C0.785281 2.78454 1.17941 2.18105 1.68408 1.67725C2.18875 1.17344 2.79289 0.780117 3.45801 0.522949C4.23632 0.231961 5.05828 0.0748994 5.88904 0.0581055C6.95704 0.0111055 7.29794 0 10.0179 0C12.7379 0 13.078 0.0110117 14.151 0.0620117C14.9817 0.0789015 15.8037 0.235961 16.582 0.526855C17.249 0.778932 17.8537 1.17221 18.355 1.6792C18.8664 2.17844 19.2617 2.78401 19.5129 3.45312C19.805 4.22911 19.963 5.04896 19.98 5.87793C19.986 6.04493 19.992 6.19391 19.999 6.33691V13.4639C19.991 13.6689 19.9819 13.8761 19.9709 14.1221C19.9544 14.9516 19.7972 15.772 19.506 16.5488C19.2483 17.2138 18.8545 17.8179 18.3497 18.3218C17.845 18.8257 17.2404 19.2185 16.575 19.4751C15.7967 19.7664 14.9749 19.9237 14.144 19.9409C13.076 19.9869 12.735 19.998 10.016 19.998C7.29699 19.998 6.95496 19.9889 5.88696 19.9419ZM5.97998 1.87598C5.34486 1.88335 4.71574 1.99994 4.12 2.22021C3.68604 2.38044 3.29318 2.63487 2.96997 2.96582C2.63498 3.28647 2.3778 3.67991 2.21802 4.11523C1.99796 4.7093 1.88161 5.33674 1.87402 5.97021C1.82702 7.02221 1.81494 7.34123 1.81494 10.0112C1.81494 12.6812 1.82702 12.9958 1.87402 14.0498C1.88189 14.6839 1.99823 15.3124 2.21802 15.9072C2.37936 16.3403 2.6344 16.7322 2.96497 17.0552C3.28841 17.3868 3.68203 17.6413 4.11694 17.8008C4.71211 18.0219 5.34107 18.1385 5.97595 18.145C7.02995 18.191 7.34995 18.2031 10.0229 18.2031C12.6959 18.2031 13.0149 18.192 14.0699 18.145C14.7051 18.1379 15.3344 18.0213 15.9301 17.8008C16.3616 17.6339 16.7535 17.379 17.0807 17.0518C17.4079 16.7246 17.6631 16.3325 17.83 15.9009C18.0517 15.3073 18.1681 14.6795 18.174 14.0459C18.221 12.9899 18.233 12.6778 18.233 10.0098C18.233 7.34177 18.221 7.02524 18.174 5.96924C18.1676 5.33565 18.0512 4.70751 17.83 4.11377C17.6694 3.67956 17.4135 3.28698 17.0811 2.96484C16.7592 2.63228 16.3659 2.37758 15.931 2.21924C15.3359 1.99813 14.7069 1.88151 14.072 1.875C13.018 1.828 12.702 1.81592 10.025 1.81592C7.34802 1.81592 7.03698 1.82898 5.97998 1.87598ZM4.87195 10.001C4.87037 8.98266 5.17088 7.98663 5.73547 7.13916C6.30007 6.29169 7.10347 5.63103 8.04382 5.24023C8.98417 4.84944 10.0192 4.74615 11.0182 4.94385C12.0171 5.14154 12.935 5.63108 13.6556 6.35059C14.3763 7.07009 14.8673 7.9872 15.0665 8.98584C15.2658 9.98448 15.1644 11.02 14.775 11.9609C14.3857 12.9019 13.726 13.7061 12.8794 14.272C12.0328 14.8379 11.0374 15.1401 10.019 15.1401C8.65494 15.1409 7.34632 14.5997 6.3811 13.6357C5.41588 12.6718 4.87301 11.3651 4.87195 10.001ZM6.68103 10.001C6.67984 10.6616 6.87467 11.308 7.24084 11.8579C7.60702 12.4078 8.12802 12.8367 8.73804 13.0903C9.34805 13.344 10.0196 13.4109 10.6677 13.2827C11.3158 13.1546 11.9113 12.8368 12.3789 12.3701C12.8465 11.9034 13.1651 11.3085 13.2944 10.6606C13.4238 10.0128 13.3579 9.34094 13.1053 8.73047C12.8528 8.12 12.4248 7.59812 11.8756 7.23096C11.3264 6.8638 10.6807 6.66797 10.02 6.66797C9.13551 6.66744 8.28699 7.01828 7.66089 7.64307C7.03479 8.26785 6.68236 9.11647 6.68103 10.001ZM14.1689 4.66113C14.1689 4.4238 14.2394 4.19148 14.3712 3.99414C14.5031 3.7968 14.6905 3.64307 14.9098 3.55225C15.1291 3.46142 15.3704 3.43758 15.6031 3.48389C15.8359 3.53019 16.0497 3.64468 16.2175 3.8125C16.3854 3.98032 16.4996 4.19398 16.5459 4.42676C16.5922 4.65953 16.5685 4.90085 16.4777 5.12012C16.3868 5.33939 16.233 5.52683 16.0356 5.65869C15.8383 5.79055 15.6064 5.86084 15.369 5.86084C15.0508 5.86084 14.7456 5.73481 14.5205 5.50977C14.2955 5.28472 14.1689 4.97939 14.1689 4.66113Z"
+                                                    fill="#8B99AD" />
+                                            </svg>
                                             <span class="mt-1">Follow us Instagram</span>
                                         </a>
-                                        <a href="#" class="scc-social d-flex align-items-center gap-1 flex-grow-1 justify-content-center">
-                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0 12.4133C0.28501 12.4473 0.571937 12.4635 0.858968 12.4611C2.46724 12.4643 4.0313 11.9345 5.30694 10.9551C4.5628 10.9396 3.84151 10.6952 3.24155 10.2547C2.64159 9.81425 2.19213 9.1994 1.95447 8.49406C2.17829 8.53805 2.40608 8.55841 2.63416 8.55491C2.95129 8.55698 3.26734 8.51768 3.57431 8.43801C2.76877 8.27931 2.04274 7.84729 1.519 7.21501C0.995268 6.58273 0.705996 5.78896 0.700027 4.96795V4.92933C1.19847 5.2004 1.75412 5.34945 2.32132 5.36411C1.563 4.87227 1.02462 4.10592 0.819062 3.22575C0.613506 2.34558 0.756699 1.41988 1.21872 0.643034C2.12556 1.74053 3.25199 2.63628 4.52556 3.27258C5.79913 3.90888 7.19172 4.27189 8.61386 4.338C8.55615 4.07361 8.52841 3.80329 8.53123 3.53269C8.53453 3.06523 8.62983 2.60325 8.81177 2.17263C8.99371 1.74202 9.25873 1.35133 9.59161 1.02313C9.9245 0.694922 10.3187 0.43535 10.7519 0.259524C11.185 0.083697 11.6486 -0.00494017 12.116 -0.001619C12.6061 -0.00189488 13.091 0.0970882 13.5417 0.289603C13.9923 0.482118 14.3991 0.764232 14.7376 1.11849C15.5389 0.963471 16.3081 0.673907 17.0127 0.262258C16.744 1.08508 16.1822 1.78043 15.4342 2.21604C16.1462 2.12798 16.8422 1.93957 17.5013 1.65616C17.0185 2.37164 16.4093 2.99289 15.7037 3.48997C15.7114 3.63907 15.717 3.79122 15.717 3.94663C15.7162 5.27993 15.4504 6.59959 14.935 7.82924C14.4195 9.0589 13.6648 10.1739 12.7146 11.1093C11.7645 12.0446 10.6379 12.782 9.40028 13.278C8.16269 13.7741 6.83886 14.019 5.5057 13.9989C3.55683 14.0061 1.64653 13.4559 0 12.4133Z" fill="#8B99AD"/>
-                                                </svg>
-                                                
+                                        <a href="#"
+                                            class="scc-social d-flex align-items-center gap-1 flex-grow-1 justify-content-center">
+                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 12.4133C0.28501 12.4473 0.571937 12.4635 0.858968 12.4611C2.46724 12.4643 4.0313 11.9345 5.30694 10.9551C4.5628 10.9396 3.84151 10.6952 3.24155 10.2547C2.64159 9.81425 2.19213 9.1994 1.95447 8.49406C2.17829 8.53805 2.40608 8.55841 2.63416 8.55491C2.95129 8.55698 3.26734 8.51768 3.57431 8.43801C2.76877 8.27931 2.04274 7.84729 1.519 7.21501C0.995268 6.58273 0.705996 5.78896 0.700027 4.96795V4.92933C1.19847 5.2004 1.75412 5.34945 2.32132 5.36411C1.563 4.87227 1.02462 4.10592 0.819062 3.22575C0.613506 2.34558 0.756699 1.41988 1.21872 0.643034C2.12556 1.74053 3.25199 2.63628 4.52556 3.27258C5.79913 3.90888 7.19172 4.27189 8.61386 4.338C8.55615 4.07361 8.52841 3.80329 8.53123 3.53269C8.53453 3.06523 8.62983 2.60325 8.81177 2.17263C8.99371 1.74202 9.25873 1.35133 9.59161 1.02313C9.9245 0.694922 10.3187 0.43535 10.7519 0.259524C11.185 0.083697 11.6486 -0.00494017 12.116 -0.001619C12.6061 -0.00189488 13.091 0.0970882 13.5417 0.289603C13.9923 0.482118 14.3991 0.764232 14.7376 1.11849C15.5389 0.963471 16.3081 0.673907 17.0127 0.262258C16.744 1.08508 16.1822 1.78043 15.4342 2.21604C16.1462 2.12798 16.8422 1.93957 17.5013 1.65616C17.0185 2.37164 16.4093 2.99289 15.7037 3.48997C15.7114 3.63907 15.717 3.79122 15.717 3.94663C15.7162 5.27993 15.4504 6.59959 14.935 7.82924C14.4195 9.0589 13.6648 10.1739 12.7146 11.1093C11.7645 12.0446 10.6379 12.782 9.40028 13.278C8.16269 13.7741 6.83886 14.019 5.5057 13.9989C3.55683 14.0061 1.64653 13.4559 0 12.4133Z"
+                                                    fill="#8B99AD" />
+                                            </svg>
                                             <span class="mt-1">Follow us Twitter</span>
                                         </a>
                                     </div>
@@ -1104,127 +1113,156 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade user-modal" id="userModal" tabindex="-1" aria-labelledby="payModalLabel"
-            aria-modal="true" role="dialog">
+        <div class="modal fade user-modal" id="userModal" tabindex="-1"
+            aria-labelledby="payModalLabel" aria-modal="true" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header p-0">
                         <button type="button" class="btn ms-auto btn-modal-close btn-circle-close"
                             data-bs-dismiss="modal" aria-label="Close">
                             <i class="fa fa-close"></i>
                         </button>
                     </div>
-                    <div class="modal-body p-lg-4 px-3 pb-4 pt-0 pb-lg-0 pt-lg-0 inter">
-                        <div class="d-flex align-items-center gap-4 pb-3 border-bottom">
-                            <img src="./assets/img/2.png" alt="DP" height="80" width="80" class="rounded-circle">
-                            <div class="">
-                                <p class="mb-1 f-12p opacity-75">Joined a day ago</p>
-                                <h3 class="fw-bold f-30p mb-0 lh-sm">Jalen Buckley</h3>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="./assets/img/united-states.png" alt="Flag" class="rounded-circle"
-                                        height="24" width="24">
-                                    <span class="f-14p opacity-75">United States</span>
+                    <div class="modal-body p-0 poppins">
+                        <div class="py-5 user-info mx-auto profile-user-info">
+                            <div class="d-flex align-items-center text-center flex-column gap-4 pt-4">
+                                <img src="./assets/img/smiley-man-relaxing-outdoors1.png" alt="Person"
+                                    class="rounded-circle" style="height: 115px; width: 115px; object-fit:cover;">
+                                <div class="d-flex flex-column gap-2 align-items-center w-100">
+                                    <h3 class="mb-0 text-white fw-semibold f-26p">Adeel Raza</h3>
+                                    <div class="ui-box">
+                                        <div class="uii-box">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center p-3 uib-row fw-medium">
+                                                <span class="uib-label f-14p">Country</span>
+                                                <div class="d-flex gap-2 align-items-center f-16p uib-value">
+                                                    <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png"
+                                                        alt="Flag" class="rounded-circle"
+                                                        style="height: 18px;width: 18px; object-fit: cover;">
+                                                    <span>Germany</span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center p-3 uib-row fw-medium">
+                                                <span class="uib-label f-14p">Joined</span>
+                                                <div class="d-flex gap-2 align-items-center f-16p uib-value">
+                                                    <span>1mo Ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="py-3 border-bottom">
-                            <div class="d-flex align-items-center gap-2 mb-3">
-                                <svg class="um-svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M5 5.43c0-.48.6-.69.89-.32l2.54 3.17c.32.4.9.5 1.33.21l1.47-.97a1 1 0 0 1 1.34.21l2.46 3.16a1 1 0 0 0 1.18.3l2.1-.9c.32-.13.69.1.69.47V18H5V5.43Z"
-                                        fill="currentColor"></path>
+                        <div class="px-md-5 px-4 py-5 um-stat-sec">
+                            <div class="d-flex align-items-center gap-2 mb-3 px-lg-5 px-4">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.44286 27H11.8284C12.1237 27 12.3663 26.7521 12.3663 26.4621V0.537891C12.3663 0.242578 12.1184 0 11.8284 0H8.44286C8.14754 0 7.90497 0.247852 7.90497 0.537891V26.4094C7.85223 26.7521 8.14754 27 8.44286 27ZM1.67176 27H5.05731C5.35262 27 5.5952 26.7521 5.5952 26.4621V16.3002C5.5952 16.0049 5.34735 15.7623 5.05731 15.7623H1.67176C1.37645 15.7623 1.13387 16.0102 1.13387 16.3002V26.4146C1.1286 26.7521 1.37645 27 1.67176 27ZM15.2192 27H18.5573C18.8526 27 19.1479 26.7521 19.1479 26.4094V11.8283C19.1479 11.533 18.9001 11.2377 18.5573 11.2377H15.2192C14.9239 11.2377 14.6286 11.4855 14.6286 11.8283V26.4568C14.6286 26.7521 14.8764 27 15.2192 27ZM21.3522 5.05723V26.4094C21.3522 26.7047 21.6001 27 21.9429 27H25.2809C25.5763 27 25.8716 26.7521 25.8716 26.4094V5.05723C25.8716 4.76191 25.6237 4.4666 25.2809 4.4666H21.9429C21.6475 4.51406 21.3522 4.76191 21.3522 5.05723Z"
+                                        fill="#56596D" />
                                 </svg>
-                                <span class="fw-bold">Stats</span>
+                                <span class="fw-semibold text-white f-30p">Stats</span>
                             </div>
-                            <div class="d-flex gap-3 stats text-center">
+                            <div class="d-flex gap-3 stats text-center px-lg-5 px-4">
                                 <div
-                                    class="um-stat rounded-lg flex-grow-1 d-flex align-items-center flex-column justify-content-center p-2">
-                                    <span class="opacity-75 f-12p fw-medium"> Offers Completed </span>
-                                    <span class="f-14p fw-bold"> 9 </span>
+                                    class="um-stat rounded-lg flex-grow-1 d-flex align-items-center justify-content-between p-4">
+                                    <span class="f-16p fw-medium"> Offers Completed </span>
+                                    <span class="f-20p fw-semibold text-white"> 9 </span>
                                 </div>
                                 <div
-                                    class="um-stat rounded-lg flex-grow-1 d-flex align-items-center flex-column justify-content-center p-2">
-                                    <span class="opacity-75 f-12p fw-medium"> Points Earn </span>
-                                    <span class="f-14p fw-bold"> 9432 </span>
+                                    class="um-stat rounded-lg flex-grow-1 d-flex align-items-center justify-content-between p-4">
+                                    <span class="f-16p fw-medium"> Coins Earn </span>
+                                    <span class="f-20p fw-semibold text-white"> <img src="./assets/img/coin.svg"
+                                            alt="Coin" height="20"> <span>9432</span> </span>
                                 </div>
                                 <div
-                                    class="um-stat rounded-lg flex-grow-1 d-flex align-items-center flex-column justify-content-center p-2">
-                                    <span class="opacity-75 f-12p fw-medium"> Users Referred </span>
-                                    <span class="f-14p fw-bold"> 0 </span>
+                                    class="um-stat rounded-lg flex-grow-1 d-flex align-items-center justify-content-between p-4">
+                                    <span class="f-16p fw-medium"> Users Referred </span>
+                                    <span class="f-20p fw-semibold text-white"> 0 </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="py-3">
-                            <div class="d-flex align-items-center gap-2 mb-3">
-                                <svg class="um-svg" width="18" height="18" viewBox="0 0 16 16">
-                                    <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
-                                        fill="currentColor"
-                                        d="M15.1988 1C15.1988 1 9.9565 0.987741 5.86961 5.07463C5.68061 5.26364 5.512 5.46646 5.36307 5.67939C4.63821 5.62264 3.53187 5.64592 2.96724 6.21093C1.64192 7.53625 1.19995 9.7455 1.19995 9.7455L4.12026 9.32832V10.329L5.87179 12.0806H6.87248L6.45542 15C6.45542 15 8.66468 14.558 9.99 13.2327C10.5556 12.6674 10.5783 11.5592 10.5213 10.8344C10.7336 10.6858 10.9357 10.5176 11.1242 10.3292C15.2111 6.24232 15.1988 1 15.1988 1ZM9.37266 5.65847C9.37266 5.01333 9.8952 4.49079 10.5403 4.49079C11.1855 4.49079 11.708 5.01333 11.708 5.65847C11.708 6.30362 11.1855 6.82616 10.5403 6.82616C9.8952 6.82616 9.37266 6.30362 9.37266 5.65847Z">
-                                    </path>
+                        <div class="px-md-5 px-4 pt-5">
+                            <div class="d-flex align-items-center gap-2 mb-3 px-lg-5 px-4">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_74_2402)">
+                                        <path
+                                            d="M30.7893 2.08605C30.7872 1.9952 30.7838 1.90434 30.7804 1.81315C30.7767 1.71141 30.7736 1.61001 30.7682 1.50793C30.7576 1.30308 30.7444 1.09722 30.727 0.89067C30.6994 0.559584 30.4364 0.296892 30.1053 0.26899C29.8988 0.251636 29.6936 0.238706 29.4891 0.227817C29.3853 0.222373 29.2825 0.21931 29.1798 0.215567C29.0906 0.212505 29.0011 0.208762 28.9123 0.20706C28.7636 0.203658 28.616 0.202637 28.4686 0.202637C28.4441 0.202637 28.4193 0.202637 28.3948 0.202977C25.4589 0.217268 22.7639 0.937968 20.0431 2.4236C19.9951 2.45014 19.9471 2.47498 19.8992 2.50118C19.8822 2.51071 19.8655 2.51888 19.8485 2.52841C19.8447 2.53045 19.8417 2.53385 19.8379 2.53589C17.6071 3.77925 15.38 5.53404 13.075 7.83905C12.813 8.10106 12.5567 8.36648 12.3032 8.63325L7.82389 8.97386C7.69288 8.98373 7.56766 9.03137 7.4632 9.11065L0.437569 14.4574C0.21401 14.6275 0.117712 14.9174 0.195635 15.1873C0.273217 15.4571 0.508686 15.6514 0.788391 15.6769L7.38051 16.272L9.46775 18.3593C8.72799 18.5284 7.97429 18.9429 7.32879 19.588C6.94224 19.9749 6.63191 20.4084 6.4046 20.8821C6.10755 21.5112 5.45524 23.1313 4.76449 24.8466L4.42728 25.6833C4.32519 25.9365 4.38406 26.2261 4.57734 26.419C4.70732 26.5493 4.88154 26.6184 5.05882 26.6184C5.14423 26.6184 5.23066 26.6021 5.31335 26.5687L6.18002 26.2193C7.88139 25.534 9.4885 24.8864 10.119 24.5894C10.5886 24.3634 11.0225 24.0531 11.4087 23.6669C12.0538 23.0217 12.4679 22.268 12.6371 21.5283L14.6624 23.5536L15.2575 30.1453C15.2827 30.425 15.4773 30.6605 15.7472 30.7381C15.8094 30.7561 15.8727 30.7646 15.9353 30.7646C16.1443 30.7646 16.346 30.6683 16.477 30.4962L21.8231 23.4709C21.9024 23.3664 21.95 23.2412 21.9599 23.1102L22.2903 18.7632C22.5819 18.4872 22.8708 18.2068 23.1569 17.921C25.4637 15.6143 27.2195 13.3862 28.4632 11.154C28.4645 11.1516 28.4666 11.1496 28.4679 11.1472C28.4741 11.1363 28.4792 11.1258 28.4853 11.1149C28.5421 11.0124 28.5962 10.91 28.6507 10.8073C30.0822 8.13713 30.7777 5.48708 30.7927 2.60701C30.793 2.57877 30.793 2.55086 30.793 2.52262C30.7937 2.378 30.7927 2.23237 30.7893 2.08605ZM22.0885 12.9282C21.5519 13.4648 20.838 13.7608 20.0785 13.7608C19.3193 13.7608 18.6054 13.4651 18.0685 12.9282C16.9602 11.8196 16.9602 10.0165 18.0685 8.90785C19.1775 7.79958 20.9809 7.80026 22.0885 8.90785C22.6254 9.44446 22.9215 10.1584 22.9215 10.9178C22.9215 11.6773 22.6258 12.3912 22.0885 12.9282Z"
+                                            fill="#56596D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_74_2402">
+                                            <rect width="31" height="31" fill="white" />
+                                        </clipPath>
+                                    </defs>
                                 </svg>
-                                <span class="fw-bold">Activity</span>
+                                <span class="fw-semibold text-white f-30p">Activity</span>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table bg-transparent um-table">
-                                    <thead>
-                                        <tr>
-                                            <td class="opacity-75">Name</td>
-                                            <td class="opacity-75">Time</td>
-                                            <td class="opacity-75">Reward</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="opacity-75">Leaderboard</td>
-                                            <td class="opacity-75">12h ago</td>
-                                            <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
-                                                    alt="Coin" height="12" width="12"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="opacity-75">Leaderboard</td>
-                                            <td class="opacity-75">12h ago</td>
-                                            <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
-                                                    alt="Coin" height="12" width="12"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="opacity-75">Leaderboard</td>
-                                            <td class="opacity-75">12h ago</td>
-                                            <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
-                                                    alt="Coin" height="12" width="12"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="opacity-75">Leaderboard</td>
-                                            <td class="opacity-75">12h ago</td>
-                                            <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
-                                                    alt="Coin" height="12" width="12"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="opacity-75">Leaderboard</td>
-                                            <td class="opacity-75">12h ago</td>
-                                            <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
-                                                    alt="Coin" height="12" width="12"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <nav aria-label="Page navigation" class="um-pagination pb-0">
-                                    <ul class="pagination justify-content-center pb-0 mb-0">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#"><span>1</span></a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#"><span>2</span></a></li>
-                                        <li class="page-item"><a class="page-link" href="#"><span>3</span></a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                            <div class="site-card px-lg-5 px-4 py-4">
+                                <div class="table-responsive">
+                                    <table class="table table-separated table-user-modal">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Time</th>
+                                                <th>Reward</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Leaderboard</td>
+                                                <td>12h ago</td>
+                                                <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
+                                                        alt="Coin" height="12" width="12"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leaderboard</td>
+                                                <td>12h ago</td>
+                                                <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
+                                                        alt="Coin" height="12" width="12"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leaderboard</td>
+                                                <td>12h ago</td>
+                                                <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
+                                                        alt="Coin" height="12" width="12"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leaderboard</td>
+                                                <td>12h ago</td>
+                                                <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
+                                                        alt="Coin" height="12" width="12"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leaderboard</td>
+                                                <td>12h ago</td>
+                                                <td><span class="me-2">200</span><img src="./assets/img/coin (1).png"
+                                                        alt="Coin" height="12" width="12"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
+                            <nav aria-label="Page navigation" class="um-pagination pb-0 my-4">
+                                <ul class="pagination justify-content-center pb-0 mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#"><span>1</span></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#"><span>2</span></a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><span>3</span></a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -1645,6 +1683,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/dist/js/script.js"></script>
+    <script src="./assets/dist/js/script.js?v=1"></script>
 
 </html>
