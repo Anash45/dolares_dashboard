@@ -462,6 +462,7 @@ img.lang-flag {
 
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sidebar {
