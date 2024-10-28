@@ -378,12 +378,12 @@ $(document).ready(function () {
     $('.vertical-carousel').each(function () {
         $(this).slick({
             vertical: true,        // Enable vertical scrolling
-        verticalSwiping: true,  // Enable vertical swiping
-        slidesToShow: 1,        // Number of slides to show at a time
-        slidesToScroll: 1,      // Number of slides to scroll
-        autoplay: true,         // Enable autoplay
-        autoplaySpeed: 3000,    // Autoplay interval (3 seconds)
-        adaptiveHeight: true,
+            verticalSwiping: true,  // Enable vertical swiping
+            slidesToShow: 1,        // Number of slides to show at a time
+            slidesToScroll: 1,      // Number of slides to scroll
+            autoplay: true,         // Enable autoplay
+            autoplaySpeed: 3000,    // Autoplay interval (3 seconds)
+            adaptiveHeight: true,
             prevArrow: `<button type="button" class="v-slick-prev p-0 rounded-circle border-0 shadow-none"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="25" height="25" rx="12.5" fill="#0D0B1F"/>
     <path d="M12.3902 15.2779L16.8402 10.8278C16.9433 10.7248 17 10.5875 17 10.4409C17 10.2944 16.9433 10.157 16.8402 10.0541L16.5126 9.7264C16.2991 9.51315 15.9521 9.51315 15.739 9.7264L12.0021 13.4633L8.26105 9.72225C8.15804 9.61933 8.02072 9.5625 7.8743 9.5625C7.72772 9.5625 7.5904 9.61933 7.48731 9.72225L7.15975 10.05C7.05675 10.153 7 10.2903 7 10.4368C7 10.5833 7.05675 10.7207 7.15975 10.8236L11.6139 15.2779C11.7172 15.3811 11.8552 15.4377 12.0018 15.4374C12.1491 15.4377 12.2869 15.3811 12.3902 15.2779Z" fill="white"/>
@@ -397,7 +397,49 @@ $(document).ready(function () {
         });
     })
 });
+
+function checkHiddenRadio() {
+    $('.hidden-radio-form').each(function () {
+        let hrf = $(this);
+        let hidden_radios = hrf.find('.er-cont');
+        hidden_radios.each(function () {
+            let radio = $(this);
+            if (radio.find('input[type="radio"]').is(':checked')) {
+                radio.addClass('checked-radio');
+            } else {
+                radio.removeClass('checked-radio');
+            }
+        });
+    })
+}
+
+function checkGcRadio() {
+    $('.gift-card-radios').each(function () {
+        let gcr = $(this);
+        let gc_radios = gcr.find('.gc-radio');
+        gc_radios.each(function () {
+            let radio = $(this);
+            if (radio.find('input[type="radio"]').is(':checked')) {
+                radio.addClass('gc-checked');
+            } else {
+                radio.removeClass('gc-checked');
+            }
+        });
+    })
+}
 $(document).ready(function () {
+    $('.expandable-radio input[type="radio"]').each(function () {
+        $(this).on('change', function () {
+            checkHiddenRadio();
+        });
+    });
+    $('.gc-radio input[type="radio"]').each(function () {
+        $(this).on('change', function () {
+            checkGcRadio();
+        });
+    });
+    checkGcRadio()
+    checkHiddenRadio();
     $('[data-bs-toggle="tooltip"]').tooltip();
     if ($.fn.select2) {
         $('#cs1').select2({

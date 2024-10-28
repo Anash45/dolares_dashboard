@@ -3227,7 +3227,7 @@ span.select2-dropdown.select2-dropdown--below {
     color: rgba(103, 112, 140, 1);
 }
 
-.sb-inp {
+.sb-inp-1 {
     background-color: rgba(13, 11, 31, 1);
     border-color: transparent;
     font-size: 13px;
@@ -3238,7 +3238,9 @@ span.select2-dropdown.select2-dropdown--below {
     border-radius: 100px;
     max-width: 100%;
 }
-
+.country-slct{
+    max-width: 200px !important;
+}
 .form-select {
     background-image: url(../../img/right-arrow.svg);
     background-size: 13px 13px;
@@ -3259,7 +3261,7 @@ span.select2-dropdown.select2-dropdown--below {
     min-width: 195px;
     background-image: url(../../img/sort-icon.svg);
     background-size: 10px 23px;
-    padding: 14px 20px 14px 50px;
+    padding: 14px 20px 14px 50px !important;
 }
 
 .sb-search {
@@ -4110,6 +4112,143 @@ span.select2-dropdown.select2-dropdown--below {
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
+}
+.withdraw-flex-1>div{
+    flex: 1 1 550px;
+}
+.accordion-button{
+    background-color: transparent !important;
+    border: 0 !important;
+    color: rgba(95, 92, 128, 1);
+    font-weight: 500 !important;
+    padding: 20px 32px;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed){
+    color: #FFFFFF !important;
+}
+.accordion-item{
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(47, 44, 70, 1) !important;
+}
+
+.accordion-body{
+    color: rgba(95, 92, 128, 1);
+    font-family: "Lato", sans-serif;
+    font-size: 1rem !important;
+    padding: 0 32px 20px !important;
+}
+
+.accordion-item:last-child{
+    border-bottom: 0 !important;
+}
+
+.accordion-card{
+    border-radius: 22px !important;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../../img/accordion-open.svg);
+}
+.accordion-button::after{
+    background-image: url(../../img/accordion-closed.svg);
+}
+.expandable-radio{
+    border-radius: 100px;
+    background-color: #0D0B1F !important;
+}
+.checked-radio .expandable-radio{
+    background-color: rgba(42, 34, 48, 1) !important;
+}
+.er-help{
+    margin-top: 10px;
+    color: rgba(133, 150, 184, 1);
+}
+
+.er-inp{
+    box-shadow: none !important;
+    padding: 16px 32px;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    color: #FFFFFF !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    font-weight: 500;
+}
+.er-foot{
+    background-color: #201E31 !important;
+    border-top: 1px solid rgba(42, 39, 67, 1) !important;
+    border-bottom: 1px solid rgba(42, 39, 67, 1) !important;
+}
+.er-inp-btn{
+    color: #EF7C16 !important;
+    background-color: rgba(239, 124, 22, 0.05) !important;
+    border-radius: 100px !important;
+    padding: 8px 32px !important;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.er-inp::placeholder{
+    color: rgba(133, 150, 184, 1) !important;
+}
+.erf-fee{
+    color: #8596B8;
+}
+
+.erf-btn{
+    padding: 20px 80px !important;
+    font-size: 1.125rem !important;
+    font-weight: 600;
+    color: #FFFFFF !important;
+    border-radius: 1000px !important;
+    background-color: #2568EF !important;
+}
+
+.gift-card-form .erf-btn{
+    color: #EF7C16 !important;
+    background-color: rgba(239, 124, 22, 0.05) !important;
+}
+
+.gift-card-form .er-cont{
+    background-color: #1E1C30;
+}
+.er-label{
+    cursor: pointer !important;
+}
+
+.gcr-name{
+    color: #5F5C80 !important;
+}
+.er-hidden{
+    display: none;
+}
+.checked-radio .er-hidden{
+    display: block;
+}
+
+.gcr-flag{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.gc-radio{
+    cursor: pointer;
+    display: block;
+    flex: 1 1 125px;
+    position: relative;
+    background-color: #19172A;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+.er-label, .gcr-name{
+    text-transform: capitalize !important;
+}
+
+.gc-radio.gc-checked{
+    border-color: #EF7C16;
 }
 @media (min-width: 992px) {
 
