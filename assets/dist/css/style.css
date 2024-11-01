@@ -3368,6 +3368,7 @@ span.select2-dropdown.select2-dropdown--below {
 }
 
 .offer-modal .modal-dialog {
+    zoom: 0.8;
     max-width: 1000px;
 }
 
