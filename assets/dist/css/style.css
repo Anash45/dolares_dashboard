@@ -4830,6 +4830,22 @@ span.select2-dropdown.select2-dropdown--below {
     .sb-btn-danger {
         font-size: 0.875rem;
     }
+    .offer-modal .modal-dialog {
+        max-width: 100%;
+        margin: 0 !important;
+        height: 100% !important;
+    }
+    
+    .offer-modal .modal-content {
+        border-radius: 00px !important;
+        height: 100% !important;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+    
+    .home-offer {
+        zoom: 0.75;
+    }
 }
 
 @media (max-width: 576px) {
