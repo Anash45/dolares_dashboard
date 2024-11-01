@@ -14,19 +14,21 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css?v=2">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=3">
     </head>
 
     <body class="side-nav-expanded">
         <header>
             <nav class="navbar navbar-expand-lg px-0">
                 <div class="container-fluid flex-row">
-                    <div class="d-flex align-items-center flex-grow-1 justify-content-lg-start justify-content-center">
+                    <div class="d-flex align-items-center flex-grow-1 justify-content-start">
                         <div class="py-3 ps-5 pe-3 sn-logo-cont">
                             <a class="navbar-brand d-inline-block" href="index.html">
                                 <img src="assets/img/Logo-light.png" alt="Logo" class="expand-hidden"
                                     style="height:30px;">
                                 <img src="assets/img/Logo-light-D.png" alt="Logo" class="expand-shown"
+                                    style="height:30px;">
+                                <img src="assets/img/Logo-light-D.png" alt="Logo" class="d-lg-none d-none"
                                     style="height:30px;">
                             </a>
                         </div>
@@ -73,7 +75,7 @@
                                 <div class="dropdown-menu shadow-lg p-2" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item p-1 bg-transparent" href="#" data-value="item1">
                                         <label
-                                            class="form-check form-switch balance-switch d-flex align-items-center justify-content-between">
+                                            class="form-check form-switch balance-switch d-flex align-items-center justify-content-between ps-0">
                                             <input class="form-check-input balanceSwitch" type="checkbox"
                                                 onchange="changeBalance()" id="balanceSwitch">
                                             <span
@@ -90,11 +92,11 @@
                                             <img src="./assets/img/9.png" alt="Avatar" height="32" width="32"
                                                 class="avatar">
                                         </div>
-                                        <i class="fa fa-chevron-down"></i>
+                                        <i class="fa fa-chevron-down d-lg-inline-block d-none"></i>
                                     </div>
                                 </button>
                                 <div class="dropdown-menu shadow-lg p-1" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item p-2 bg-transparent active" href="./profile.html"
+                                    <a class="dropdown-item p-2 bg-transparent" href="./profile.html"
                                         data-value="item1">
                                         <div class="d-flex align-items-center justify-content-start gap-2">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -368,7 +370,7 @@
                     </div>
                 </div>
             </aside>
-            <main class="px-3">
+            <main class="px-md-3">
                 <div class="nav-down">
                     <div class="p-2">
                         <div class="d-flex align-items-center justify-content-between">
@@ -1824,7 +1826,7 @@
                     </div>
                 </section>
                 
-            <footer class="pt-4">
+            <footer class="pt-4 pb-lg-0 pb-5 mb-lg-0 mb-3">
                 <div class="f-top py-5">
                     <div class="container">
                         <div class="d-flex align-items-center justify-content-between">
@@ -1961,10 +1963,10 @@
                 <a class="m-nav-link py-2 px-1" href="./withdraw.html">
                     <i class="fa-regular fa-credit-card"></i> <span>Withdraw</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./leaders.html">
+                <a class="m-nav-link py-2 px-1" href="./leaderboard.html">
                     <i class="fa-regular fa-star"></i> <span>Leaders</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./reward.html">
+                <a class="m-nav-link py-2 px-1" href="./rewards.html">
                     <i class="fa fa-gift"></i> <span>Reward</span>
                 </a>
                 <a class="m-nav-link py-2 px-1" onclick="chatWindow()" href="#">
@@ -2677,6 +2679,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/dist/js/script.js?v=2"></script>
+    <script src="./assets/dist/js/script.js?v=3"></script>
 
 </html>

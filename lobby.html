@@ -14,19 +14,21 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css?v=2">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=3">
     </head>
 
     <body class="side-nav-expanded">
         <header>
             <nav class="navbar navbar-expand-lg px-0">
                 <div class="container-fluid flex-row">
-                    <div class="d-flex align-items-center flex-grow-1 justify-content-lg-start justify-content-center">
+                    <div class="d-flex align-items-center flex-grow-1 justify-content-start">
                         <div class="py-3 ps-5 pe-3 sn-logo-cont">
                             <a class="navbar-brand d-inline-block" href="index.html">
                                 <img src="assets/img/Logo-light.png" alt="Logo" class="expand-hidden"
                                     style="height:30px;">
                                 <img src="assets/img/Logo-light-D.png" alt="Logo" class="expand-shown"
+                                    style="height:30px;">
+                                <img src="assets/img/Logo-light-D.png" alt="Logo" class="d-lg-none d-none"
                                     style="height:30px;">
                             </a>
                         </div>
@@ -73,7 +75,7 @@
                                 <div class="dropdown-menu shadow-lg p-2" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item p-1 bg-transparent" href="#" data-value="item1">
                                         <label
-                                            class="form-check form-switch balance-switch d-flex align-items-center justify-content-between">
+                                            class="form-check form-switch balance-switch d-flex align-items-center justify-content-between ps-0">
                                             <input class="form-check-input balanceSwitch" type="checkbox"
                                                 onchange="changeBalance()" id="balanceSwitch">
                                             <span
@@ -90,7 +92,7 @@
                                             <img src="./assets/img/9.png" alt="Avatar" height="32" width="32"
                                                 class="avatar">
                                         </div>
-                                        <i class="fa fa-chevron-down"></i>
+                                        <i class="fa fa-chevron-down d-lg-inline-block d-none"></i>
                                     </div>
                                 </button>
                                 <div class="dropdown-menu shadow-lg p-1" aria-labelledby="dropdownMenuButton">
@@ -208,9 +210,6 @@
                     <div class="py-4 ps-4 pe-3 d-flex flex-column flex-grow-1 poppins">
                         <nav class="px-0 d-flex flex-column gap-4 mb-2">
                             <ul class="navbar-nav gap-2">
-                                <li class="nav-item px-lg-4 expand-hidden">
-                                    <span class="fw-semibold sn-title d-inline-block mb-2">General</span>
-                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./lobby.html">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
@@ -270,9 +269,7 @@
                                 </li>
                             </ul>
                             <ul class="navbar-nav gap-2">
-                                <li class="nav-item px-lg-4 expand-hidden">
-                                    <span class="fw-semibold sn-title d-inline-block mb-2">Earn</span>
-                                </li>
+                                <li class="nav-border mb-3"></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./offers.html">
                                         <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
@@ -297,9 +294,7 @@
                                 </li>
                             </ul>
                             <ul class="navbar-nav gap-2">
-                                <li class="nav-item px-lg-4 expand-hidden">
-                                    <span class="fw-semibold sn-title d-inline-block mb-2">Prizes</span>
-                                </li>
+                                <li class="nav-border mb-3"></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./rewards.html">
                                         <svg width="19" height="19" viewBox="0 0 19 19" fill="currentColor"
@@ -346,9 +341,7 @@
                                 </li>
                             </ul>
                             <ul class="navbar-nav gap-2">
-                                <li class="nav-item px-lg-4 expand-hidden">
-                                    <span class="fw-semibold sn-title d-inline-block mb-2">Others</span>
-                                </li>
+                                <li class="nav-border mb-3"></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./affiliate.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
@@ -368,7 +361,7 @@
                     </div>
                 </div>
             </aside>
-            <main class="px-3">
+            <main class="px-md-3">
                 <div class="nav-down">
                     <div class="p-2">
                         <div class="d-flex align-items-center justify-content-between">
@@ -492,7 +485,7 @@
                 <section class="affiliate-sec py-5">
                     <div class="container pe-xxl-5">
                         <div class="home-offer" id="home-offers">
-                            <div class="mb-5 lobby-cards d-flex gap-3 flex-wrap">
+                            <div class="mb-5 lobby-cards d-flex gap-3">
                                 <div class="lobby-card lc-orange">
                                     <div class="lc-content">
                                         <h2 class="lc-title text-white mb-2">EARN BATTLE</h2>
@@ -608,7 +601,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nav-tabs-cont px-4 mb-4">
+                        <div class="nav-tabs-cont px-md-4 px-0 mb-md-4 mb-2">
                             <h3 class="mb-0 f-26p fw-semibold poppins text-white">Activity</h3>
                             <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
@@ -625,11 +618,11 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-content py-4" id="pills-tabContent">
+                        <div class="tab-content py-md-4 py-2" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="tab-2" role="tabpanel"
                                 aria-labelledby="pills-tab-2">
                                 <div class="d-flex flex-column gap-4">
-                                    <div class="site-card site-card-lighter py-md-5 px-4">
+                                    <div class="site-card site-card-lighter py-md-5 px-2 py-md-0 py-2">
                                         <div class="pe-3">
                                             <div class="table-responsive">
                                                 <table
@@ -763,7 +756,7 @@
                             </div>
                             <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="pills-tab-1">
                                 <div class="d-flex flex-column gap-4">
-                                    <div class="site-card site-card-lighter py-md-5 px-4">
+                                    <div class="site-card site-card-lighter py-md-5 px-2 py-md-0 py-2">
                                         <div class="pe-3">
                                             <div class="table-responsive">
                                                 <table
@@ -897,7 +890,7 @@
                             </div>
                             <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-tab-3">
                                 <div class="d-flex flex-column gap-4">
-                                    <div class="site-card site-card-lighter py-md-5 px-4">
+                                    <div class="site-card site-card-lighter py-md-5 px-2 py-md-0 py-2">
                                         <div class="pe-3">
                                             <div class="table-responsive">
                                                 <table
@@ -1032,7 +1025,7 @@
                         </div>
                     </div>
                 </section>
-                <footer class="pt-4">
+                <footer class="pt-4 pb-lg-0 pb-5 mb-lg-0 mb-3">
                     <div class="f-top py-5">
                         <div class="container">
                             <div class="d-flex align-items-center justify-content-between">
@@ -1174,10 +1167,10 @@
                 <a class="m-nav-link py-2 px-1" href="./withdraw.html">
                     <i class="fa-regular fa-credit-card"></i> <span>Withdraw</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./leaders.html">
+                <a class="m-nav-link py-2 px-1" href="./leaderboard.html">
                     <i class="fa-regular fa-star"></i> <span>Leaders</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./reward.html">
+                <a class="m-nav-link py-2 px-1" href="./rewards.html">
                     <i class="fa fa-gift"></i> <span>Reward</span>
                 </a>
                 <a class="m-nav-link py-2 px-1" onclick="chatWindow()" href="#">
@@ -1783,7 +1776,7 @@
                         </svg>
                         <span class="f-20p text-white fw-semibold poppins">Notifications</span>
                     </div>
-                    <a href="#">
+                    <a href="#" onclick="notificationsWindow()">
                         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="19" cy="19" r="19" fill="#0D0B1F" />
                             <path
@@ -1890,6 +1883,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/dist/js/script.js?v=2"></script>
+    <script src="./assets/dist/js/script.js?v=3"></script>
 
 </html>

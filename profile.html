@@ -14,19 +14,21 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css?v=2">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=3">
     </head>
 
     <body class="side-nav-expanded">
         <header>
             <nav class="navbar navbar-expand-lg px-0">
                 <div class="container-fluid flex-row">
-                    <div class="d-flex align-items-center flex-grow-1 justify-content-lg-start justify-content-center">
+                    <div class="d-flex align-items-center flex-grow-1 justify-content-start">
                         <div class="py-3 ps-5 pe-3 sn-logo-cont">
                             <a class="navbar-brand d-inline-block" href="index.html">
                                 <img src="assets/img/Logo-light.png" alt="Logo" class="expand-hidden"
                                     style="height:30px;">
                                 <img src="assets/img/Logo-light-D.png" alt="Logo" class="expand-shown"
+                                    style="height:30px;">
+                                <img src="assets/img/Logo-light-D.png" alt="Logo" class="d-lg-none d-none"
                                     style="height:30px;">
                             </a>
                         </div>
@@ -73,7 +75,7 @@
                                 <div class="dropdown-menu shadow-lg p-2" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item p-1 bg-transparent" href="#" data-value="item1">
                                         <label
-                                            class="form-check form-switch balance-switch d-flex align-items-center justify-content-between">
+                                            class="form-check form-switch balance-switch d-flex align-items-center justify-content-between ps-0">
                                             <input class="form-check-input balanceSwitch" type="checkbox"
                                                 onchange="changeBalance()" id="balanceSwitch">
                                             <span
@@ -90,11 +92,11 @@
                                             <img src="./assets/img/9.png" alt="Avatar" height="32" width="32"
                                                 class="avatar">
                                         </div>
-                                        <i class="fa fa-chevron-down"></i>
+                                        <i class="fa fa-chevron-down d-lg-inline-block d-none"></i>
                                     </div>
                                 </button>
                                 <div class="dropdown-menu shadow-lg p-1" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item p-2 bg-transparent active" href="./profile.html"
+                                    <a class="dropdown-item p-2 bg-transparent" href="./profile.html"
                                         data-value="item1">
                                         <div class="d-flex align-items-center justify-content-start gap-2">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -368,7 +370,7 @@
                     </div>
                 </div>
             </aside>
-            <main class="px-3">
+            <main class="px-md-3">
                 <div class="nav-down">
                     <div class="p-2">
                         <div class="d-flex align-items-center justify-content-between">
@@ -550,7 +552,7 @@
                                 <canvas id="earningsChart" class="w-100"></canvas>
                             </div>
                         </div>
-                        <div class="nav-tabs-cont px-4 mb-4 pt-5">
+                        <div class="nav-tabs-cont px-md-4 px-0 mb-md-4 mb-2 pt-5">
                             <h3 class="mb-0 f-26p fw-semibold poppins text-white">Profile</h3>
                             <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
@@ -567,7 +569,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-content py-4" id="pills-tabContent">
+                        <div class="tab-content py-md-4 py-2" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="tab-2" role="tabpanel" aria-labelledby="pills-tab-2">
                                 <div class="d-flex flex-column gap-4">
                                     <div class="site-card py-md-5 px-md-5 p-3">
@@ -672,27 +674,27 @@
                                 aria-labelledby="pills-tab-1">
                                 <div class="d-flex flex-column gap-4">
                                     <div class="site-card py-md-5 px-md-5 p-3">
-                                        <ul class="nav nav-pills sub-nav-pills py-3 mb-0 px-5" id="pills-tab"
+                                        <ul class="nav nav-pills sub-nav-pills bg-transparent py-3 mb-0 flex-nowrap" id="pills-tab"
                                             role="tablist">
                                             <li class="nav-item" role="presentation">
-                                                <a class="nav-link active" id="pills-sub-1-tab-1" data-bs-toggle="pill"
+                                                <a class="nav-link px-md-3 px-2 active" id="pills-sub-1-tab-1" data-bs-toggle="pill"
                                                     href="#sub-1-tab-1" role="tab" aria-controls="sub-1-tab-1"
                                                     aria-selected="true">Earnings</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <a class="nav-link" id="pills-sub-1-tab-2" data-bs-toggle="pill"
+                                                <a class="nav-link px-md-3 px-2" id="pills-sub-1-tab-2" data-bs-toggle="pill"
                                                     href="#sub-1-tab-2" role="tab" aria-controls="sub-1-tab-2"
                                                     aria-selected="false">Held Offers</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <a class="nav-link" id="pills-sub-1-tab-3" data-bs-toggle="pill"
+                                                <a class="nav-link px-md-3 px-2" id="pills-sub-1-tab-3" data-bs-toggle="pill"
                                                     href="#sub-1-tab-3" role="tab" aria-controls="sub-1-tab-3"
                                                     aria-selected="false">Chargebacks</a>
                                             </li>
                                         </ul>
                                         <form action="" method="post">
                                             <div class="search-boxes d-flex flex-wrap gap-3 mt-md-5 mt-3">
-                                                <div class="search-box p-4">
+                                                <div class="search-box p-md-4 p-3">
                                                     <label class="sb-label text-orange f-14p fw-medium">Period
                                                         Form</label>
                                                     <div
@@ -703,7 +705,7 @@
                                                             alt="Calendar" height="20">
                                                     </div>
                                                 </div>
-                                                <div class="search-box p-4">
+                                                <div class="search-box p-md-4 p-3">
                                                     <label class="sb-label text-orange f-14p fw-medium">Until</label>
                                                     <div
                                                         class="d-flex align-items-center justify-content-between gap-3 position-relative">
@@ -713,7 +715,7 @@
                                                             alt="Calendar" height="20">
                                                     </div>
                                                 </div>
-                                                <div class="search-box p-4">
+                                                <div class="search-box p-md-4 p-3">
                                                     <label
                                                         class="sb-label text-orange f-14p fw-medium">Offerwall</label>
                                                     <div
@@ -726,7 +728,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="search-box p-4">
+                                                <div class="search-box p-md-4 p-3">
                                                     <label class="sb-label text-orange f-14p fw-medium">Entries per
                                                         page</label>
                                                     <div
@@ -746,7 +748,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="tab-content py-4" id="sub-pills-tabContent">
+                                    <div class="tab-content py-md-4 py-2" id="sub-pills-tabContent">
                                         <div class="tab-pane fade active show" id="sub-1-tab-1" role="tabpanel"
                                             aria-labelledby="pills-sub-1-tab-1">
                                             <div class="d-flex flex-column gap-4">
@@ -1236,21 +1238,21 @@
                             <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-tab-3">
                                 <div class="d-flex flex-column gap-4">
                                     <div class="site-card py-md-5 px-md-5 p-3">
-                                        <ul class="nav nav-pills sub-nav-pills py-3 mb-0 px-5" id="pills-tab"
+                                        <ul class="nav nav-pills sub-nav-pills bg-transparent py-3 mb-0 flex-nowrap" id="pills-tab"
                                             role="tablist">
                                             <li class="nav-item" role="presentation">
-                                                <a class="nav-link active" id="pills-sub-2-tab-1" data-bs-toggle="pill"
+                                                <a class="nav-link px-md-3 px-2 active" id="pills-sub-2-tab-1" data-bs-toggle="pill"
                                                     href="#sub-2-tab-1" role="tab" aria-controls="sub-2-tab-1"
                                                     aria-selected="true">Withdrawals</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <a class="nav-link" id="pills-sub-2-tab-2" data-bs-toggle="pill"
+                                                <a class="nav-link px-md-3 px-2" id="pills-sub-2-tab-2" data-bs-toggle="pill"
                                                     href="#sub-2-tab-2" role="tab" aria-controls="sub-2-tab-2"
                                                     aria-selected="false">Pending</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="tab-content py-4" id="sub-pills-tabContent">
+                                    <div class="tab-content py-md-4 py-2" id="sub-pills-tabContent">
                                         <div class="tab-pane fade active show" id="sub-2-tab-1" role="tabpanel"
                                             aria-labelledby="pills-sub-2-tab-1">
                                             <div class="d-flex flex-column gap-4">
@@ -1579,7 +1581,7 @@
                         </div>
                     </div>
                 </section>
-                <footer class="pt-4">
+                <footer class="pt-4 pb-lg-0 pb-5 mb-lg-0 mb-3">
                     <div class="f-top py-5">
                         <div class="container">
                             <div class="d-flex align-items-center justify-content-between">
@@ -1716,10 +1718,10 @@
                 <a class="m-nav-link py-2 px-1" href="./withdraw.html">
                     <i class="fa-regular fa-credit-card"></i> <span>Withdraw</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./leaders.html">
+                <a class="m-nav-link py-2 px-1" href="./leaderboard.html">
                     <i class="fa-regular fa-star"></i> <span>Leaders</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./reward.html">
+                <a class="m-nav-link py-2 px-1" href="./rewards.html">
                     <i class="fa fa-gift"></i> <span>Reward</span>
                 </a>
                 <a class="m-nav-link py-2 px-1" onclick="chatWindow()" href="#">
@@ -2432,7 +2434,7 @@
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./assets/dist/js/script.js?v=2"></script>
+    <script src="./assets/dist/js/script.js?v=3"></script>
     <script>
         $(document).ready(function () {
             // Sample data for the last 14 days
