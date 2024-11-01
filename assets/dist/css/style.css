@@ -4626,7 +4626,7 @@ body {
 
 @media (max-width: 768px) {
     .offer-boxes-cont {
-        zoom: 0.75;
+        zoom: 0.9;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
     }
 
