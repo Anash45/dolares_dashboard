@@ -4325,6 +4325,9 @@ span.select2-dropdown.select2-dropdown--below {
     display: none;
 }
 
+body {
+    zoom: 0.85;
+}
 @media (min-width: 992px) {
     .user-modal .modal-content {
         zoom: 0.75;
@@ -4396,9 +4399,6 @@ span.select2-dropdown.select2-dropdown--below {
         max-width: 90%;
     }
 
-    body {
-        zoom: 0.85;
-    }
 }
 
 
@@ -4844,7 +4844,7 @@ span.select2-dropdown.select2-dropdown--below {
     }
     
     .home-offer {
-        zoom: 0.75;
+        zoom: 0.9;
     }
 }
 
