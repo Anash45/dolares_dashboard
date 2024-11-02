@@ -118,6 +118,10 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -324,7 +328,7 @@ nav .nav-link i {
 .nav-down {
     background-color: #0D0B1F !important;
     position: sticky;
-    top: 0;
+    top: 95px;
     z-index: 9;
 }
 
@@ -468,9 +472,12 @@ img.lang-flag {
     position: relative;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-top: 100px;
 }
 
-.tpg-label,.uib-label,.pc-label{
+.tpg-label,
+.uib-label,
+.pc-label {
     color: rgba(161, 159, 180, 1) !important;
 }
 
@@ -479,7 +486,7 @@ img.lang-flag {
     width: 290px;
     background-color: #19172A;
     position: sticky;
-    top: 0;
+    top: 100px;
     height: calc(100vh + (100vh* 0.20));
 }
 
@@ -4338,13 +4345,15 @@ span.select2-dropdown.select2-dropdown--below {
     right: 20px;
     z-index: 1;
 }
-.offer-filter-btn{
+
+.offer-filter-btn {
     display: none;
 }
 
 body {
     zoom: 0.85;
 }
+
 @media (min-width: 992px) {
     .user-modal .modal-content {
         zoom: 0.75;
@@ -4458,6 +4467,13 @@ body {
 
 
 @media (max-width: 992px) {
+    .wrapper{
+        padding-top: 75px;
+    }
+    .nav-down {
+        top: 75px;
+    }
+
     .navbar-brand .expand-hidden {
         display: none !important;
     }
@@ -4617,26 +4633,29 @@ body {
     .offer-search-box {
         display: none;
     }
-    .offer-filter-btn{
+
+    .offer-filter-btn {
         display: block;
         margin-left: auto;
     }
 
-    .ofb-close{
+    .ofb-close {
         display: none;
     }
-    .nav-tabs-cont{
+
+    .nav-tabs-cont {
         flex-wrap: wrap;
     }
-    .offer-pills{
+
+    .offer-pills {
         width: 100%;
     }
 
-    .filter-opened .ofb-close{
+    .filter-opened .ofb-close {
         display: block;
     }
 
-    .filter-opened .ofb-filter{
+    .filter-opened .ofb-filter {
         display: none;
     }
 }
@@ -4847,19 +4866,20 @@ body {
     .sb-btn-danger {
         font-size: 0.875rem;
     }
+
     .offer-modal .modal-dialog {
         max-width: 100%;
         margin: 0 !important;
         height: 100% !important;
     }
-    
+
     .offer-modal .modal-content {
         border-radius: 00px !important;
         height: 100% !important;
         overflow: auto;
         scrollbar-width: thin;
     }
-    
+
     .home-offer {
         zoom: 0.9;
     }

@@ -388,16 +388,16 @@ $(document).ready(function () {
     });
     checkLayout();
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            // The window has been scrolled down more than 100px
-            $('.chat-widget').css({
-                'top': '0px'
-            })
-        } else {
-            $('.chat-widget').css({
-                'top': '100px'
-            })
-        }
+        // if ($(this).scrollTop() > 100) {
+        //     // The window has been scrolled down more than 100px
+        //     $('.chat-widget').css({
+        //         'top': '0px'
+        //     })
+        // } else {
+        //     $('.chat-widget').css({
+        //         'top': '100px'
+        //     })
+        // }
     });
 
     function updateSelectedOS() {
