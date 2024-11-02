@@ -323,6 +323,9 @@ nav .nav-link i {
 
 .nav-down {
     background-color: #0D0B1F !important;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .nav-down-btn {
