@@ -482,7 +482,7 @@ img.lang-flag {
 }
 
 .sidebar {
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 16px 0 0;
     width: 290px;
     background-color: #19172A;
     position: sticky;
