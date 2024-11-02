@@ -462,13 +462,22 @@ img.lang-flag {
 
 .wrapper {
     display: flex;
+    position: relative;
+    align-items: flex-start;
     flex-wrap: wrap;
+}
+
+.tpg-label{
+    color: rgba(161, 159, 180, 1) !important;
 }
 
 .sidebar {
     border-radius: 0 16px 16px 0;
     width: 290px;
     background-color: #19172A;
+    position: sticky;
+    top: 0;
+    height: calc(100vh + (100vh* 0.20));
 }
 
 .side-nav {
