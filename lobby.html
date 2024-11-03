@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css?v=7">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=8">
     </head>
 
     <body class="side-nav-expanded">
@@ -40,7 +40,7 @@
                                     d="M42.25 20.25C42.25 19.2835 41.4665 18.5 40.5 18.5H19.5C18.5335 18.5 17.75 19.2835 17.75 20.25C17.75 21.2165 18.5335 22 19.5 22H40.5C41.4665 22 42.25 21.2165 42.25 20.25ZM42.25 29C42.25 28.0335 41.4665 27.25 40.5 27.25H26.5C25.5335 27.25 24.75 28.0335 24.75 29C24.75 29.9665 25.5335 30.75 26.5 30.75H40.5C41.4665 30.75 42.25 29.9665 42.25 29ZM40.5 36C41.4665 36 42.25 36.7835 42.25 37.75C42.25 38.7165 41.4665 39.5 40.5 39.5H19.5C18.5335 39.5 17.75 38.7165 17.75 37.75C17.75 36.7835 18.5335 36 19.5 36H40.5Z"
                                     fill="#A6A4BC" />
                             </svg>
-                            <a href="#" class="d-flex align-items-center gap-2 download-btn">
+                            <a href="#" class="d-flex align-items-center gap-2 download-btn hd-btn">
                                 <img src="./assets/img/playstore-svgrepo-com 1.svg" alt="Play" style="height: 26px;">
                                 <span class="d-flex flex-column gap-0 poppins">
                                     <span class="f-14p fw-bold text-white">Download our app</span>
@@ -162,7 +162,7 @@
                         <div class="d-lg-flex d-none align-items-center">
                             <!-- Chat button -->
                             <div class="ps-0">
-                                <button class="btn btn-chat pe-0" onclick="notificationsWindow()">
+                                <button class="btn btn-chat pe-0 btn-chat-noti" onclick="notificationsWindow()">
                                     <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="29.5" cy="29.5" r="29.5" fill="#19172A" />
@@ -177,7 +177,7 @@
                             </div>
                             <!-- Chat button -->
                             <div class="ps-0">
-                                <button class="btn btn-chat" onclick="chatWindow()">
+                                <button class="btn btn-chat btn-chat-msg" onclick="chatWindow()">
                                     <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="29.5" cy="29.5" r="29.5" fill="#2568EF" />
@@ -211,6 +211,14 @@
                         <nav class="px-0 d-flex flex-column gap-4 mb-2">
                             <ul class="navbar-nav gap-2">
                                 <li class="nav-item">
+                                    <div class="position-relative search-offers-cont py-2">
+                                        <i class="fa fa-search"></i>
+                                        <input type="search" name="search-offers" id="search-offers"
+                                            class="form-control bg-transparent so-inp" placeholder="Search offers">
+                                    </div>
+                                </li>
+                                <li class="nav-border my-3"></li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="./lobby.html">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -235,7 +243,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./cashout.html">
+                                    <a class="nav-link" href="./withdraw.html">
                                         <svg width="18" height="16" viewBox="0 0 18 16" fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -254,17 +262,6 @@
                                                 fill="currentColor" />
                                         </svg>
                                         <span class="expand-hidden">Profile</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="./affiliate.html">
-                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7.09602 10.3866C9.00669 9.94525 10.122 9.55925 9.26002 7.93192C6.63869 2.98058 8.56535 0.333252 11.334 0.333252C14.1574 0.333252 16.0367 3.08258 13.4074 7.93192C12.5194 9.56858 13.6987 9.95459 15.5687 10.3866C17.224 10.7693 17.3334 11.5779 17.3334 12.9793V13.6666H5.33335C5.33335 11.8366 5.18669 10.8279 7.09602 10.3866ZM-1.33331 13.6666H3.87269C3.84935 8.21525 6.16335 10.1246 6.16335 6.24859C6.16335 4.57458 5.07069 3.66658 3.66469 3.66658C1.58802 3.66658 0.143354 5.65258 2.10935 9.36592C2.75535 10.5859 1.42202 10.8759 -0.011313 11.2066C-1.25265 11.4933 -1.33331 12.0999 -1.33331 13.1513V13.6666Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                        <span class="expand-hidden">Affiliate</span>
                                     </a>
                                 </li>
                             </ul>
@@ -485,7 +482,7 @@
                 <section class="affiliate-sec py-5">
                     <div class="container pe-xxl-5">
                         <div class="home-offer" id="home-offers">
-                            <div class="mb-5 lobby-cards d-flex gap-3">
+                            <div class="mb-5 lobby-cards d-lg-flex d-none gap-3">
                                 <div class="lobby-card lc-orange">
                                     <div class="lc-content">
                                         <h2 class="lc-title text-white mb-2">EARN BATTLE</h2>
@@ -502,9 +499,11 @@
                                 </div>
                             </div>
                             <div class="offers-container mt-0 mb-5">
-                                <div class="mb-0 py-2 d-flex align-items-center of-title">
+                                <div class="mb-0 py-2 d-flex align-items-center of-title justify-content-between">
                                     <h2 class="page-title mb-0 fw-semibold f-28p ms-2 text-white">Recently Completed
                                     </h2>
+                                    <div class="pe-5"><a href="#" class="view-link f-16p fw-semibold pe-5 me-3">View
+                                            All</a></div>
                                 </div>
                                 <div class="py-2">
                                     <div class="d-flex offers mt-2">
@@ -556,45 +555,130 @@
                                 </div>
                             </div>
                             <div class="offers-container mt-0 mb-5">
-                                <div class="mb-0 py-2 d-flex align-items-center of-title">
+                                <div class="mb-0 py-2 d-flex align-items-center of-title justify-content-between">
                                     <h2 class="page-title mb-0 fw-semibold f-28p ms-2 text-white">Offer Walls </h2>
+                                    <div class="pe-5"><a href="#" class="view-link f-16p fw-semibold pe-5 me-3">View
+                                            All</a></div>
                                 </div>
                                 <div class="py-2">
                                     <div class="d-flex offers mt-2">
                                         <div class="mx-2">
-                                            <div onclick="openModal('offer')" class="offer-box ob-first ob-simple">
-                                                <img src="./assets/img/offers-cards/offer-1.svg" alt="Offer"
-                                                    class="ow-img">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #45b6f2  !important;">
+                                                <span
+                                                    style="position: absolute; top: 10px; right: 10px; font-size: 0.85rem; background: #a7c957; color: #1B4332; padding: 0px 5px; border-radius: 4px; font-weight: 500;">+30%</span>
+                                                <img src="https://dolares.app/public/storage/network_logos/e9s89EWbQKnLLaHu8OXPSGQZ6CX3LPkIEahVaWOP.png"
+                                                    alt="AdGateMedia" class="ob-main-img">
+                                                <span class="ob-name text-white">AdGateMedia</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="mx-2">
-                                            <div onclick="openModal('offer')" class="offer-box ob-first ob-simple">
-                                                <img src="./assets/img/offers-cards/offer-2.svg" alt="Offer"
-                                                    class="ow-img">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #1c2531  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/VCnYX2a3ClbSPcR0BwrduB4aolIG1AlzPWuLXttf.png"
+                                                    alt="Lootably" class="ob-main-img">
+                                                <span class="ob-name text-white">Lootably</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="mx-2">
-                                            <div onclick="openModal('offer')" class="offer-box ob-first ob-simple">
-                                                <img src="./assets/img/offers-cards/offer-3.svg" alt="Offer"
-                                                    class="ow-img">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #33485d  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/7jutdyflnKyoYSeUOYnecYcfiGpSmtytebjRLJsL.png"
+                                                    alt="Revenue Universe" class="ob-main-img">
+                                                <span class="ob-name text-white">Revenue Universe</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="mx-2">
-                                            <div onclick="openModal('offer')" class="offer-box ob-first ob-simple">
-                                                <img src="./assets/img/offers-cards/offer-4.svg" alt="Offer"
-                                                    class="ow-img">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #4bb170  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/PYP76CcXPYfoW6l5gYxGBokAWzlw2PrBcKLWxGKn.png"
+                                                    alt="Monlix" class="ob-main-img">
+                                                <span class="ob-name text-white">Monlix</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="mx-2">
-                                            <div onclick="openModal('offer')" class="offer-box ob-first ob-simple">
-                                                <img src="./assets/img/offers-cards/offer-5.svg" alt="Offer"
-                                                    class="ow-img">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #2563eb  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/36eNroaRox5OYDPGCP39nUsThcbhqQSEZUQFMiZb.png"
+                                                    alt="TimeWall" class="ob-main-img">
+                                                <span class="ob-name text-white">TimeWall</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="mx-2">
-                                            <div onclick="openModal('offer')" class="offer-box ob-first ob-simple">
-                                                <img src="./assets/img/offers-cards/offer-6.svg" alt="Offer"
-                                                    class="ow-img">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #ff7707  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/kXaeBKiq8TwF39aoJ0nzi8VhdNFb8yDaPelotDBE.png"
+                                                    alt="Make Money" class="ob-main-img">
+                                                <span class="ob-name text-white">Make Money</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mx-2">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #AADBD6  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/7tq88rj01q84kb8rGsLcc8IyYI26Olu7p3x9iw91.png"
+                                                    alt="Notik" class="ob-main-img">
+                                                <span class="ob-name text-white">Notik</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mx-2">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #16202b  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/4p7IQPnWoRDjtlzwHu6WBadlI3wo5s9obxvOsp9H.png"
+                                                    alt="Revlum" class="ob-main-img">
+                                                <span class="ob-name text-white">Revlum</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mx-2">
+                                            <div onClick="openModal('signin')" class="offer-box ob-first ob-simple"
+                                                style="background-color:  #ffbc42  !important;">
+                                                <img src="https://dolares.app/public/storage/network_logos/XyBGXJL1Hhm58er80iwYPHz5blQ2wWN6hRtnjaSl.png"
+                                                    alt="Adscend Media" class="ob-main-img">
+                                                <span class="ob-name text-white">Adscend Media</span>
+                                                <span class="ob-percent text-white">&nbsp;</span>
+                                                <span class="show-pop">
+                                                    <span class="eye-circle"><i class="fa-solid fa-eye"></i></span>
+                                                    <p class="text-white">Show Offers</p>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -617,6 +701,29 @@
                                         aria-controls="tab-3" aria-selected="false">Withdrawls</a>
                                 </li>
                             </ul>
+                            <div
+                                class="d-flex ms-auto offer-filters gap-2 align-items-center flex-sm-grow-0 flex-grow-1 sb-flex-3">
+                                <div class="position-relative sb-flex-4">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="sb-inp-icon">
+                                        <path
+                                            d="M10.5 0C16.299 0 21 4.70103 21 10.5C21 16.299 16.299 21 10.5 21C4.70103 21 0 16.299 0 10.5C0 4.70103 4.70103 0 10.5 0ZM1.5308 9.75002H4.51506C4.56513 8.50863 4.73849 7.32684 5.01389 6.24187C4.31706 5.9974 3.67403 5.70779 3.09723 5.3801C2.22385 6.64052 1.66405 8.1348 1.5308 9.75002ZM6.73616 2.32247C5.71433 2.79355 4.79586 3.4505 4.02408 4.25003C4.4539 4.47266 4.92925 4.67317 5.44258 4.84787C5.79348 3.88828 6.23112 3.03522 6.73616 2.32247ZM9.75002 9.75002V7.10994C8.57983 7.06276 7.46265 6.90597 6.42959 6.65753C6.20469 7.60873 6.06073 8.6514 6.0154 9.75002H9.75002ZM9.75002 1.62445C8.55903 2.02405 7.52674 3.35927 6.84842 5.23922C7.74762 5.43902 8.7244 5.5673 9.75002 5.6096V1.62445ZM19.4692 9.75002C19.3359 8.1348 18.7762 6.64057 17.9028 5.3801C17.326 5.70779 16.6829 5.99745 15.9861 6.24192C16.2615 7.32684 16.4348 8.50863 16.4849 9.75002H19.4692ZM14.2638 2.32247C14.7688 3.03522 15.2065 3.88833 15.5574 4.84787C16.0708 4.67317 16.546 4.47266 16.9759 4.25003C16.2041 3.4505 15.2857 2.79355 14.2638 2.32247ZM11.25 9.75002H14.9846C14.9393 8.6514 14.7953 7.60873 14.5704 6.65753C13.5374 6.90597 12.4201 7.06276 11.25 7.10994V9.75002ZM11.25 1.62445V5.6096C12.2756 5.5673 13.2524 5.43902 14.1515 5.23922C13.4733 3.35927 12.4409 2.0241 11.25 1.62445ZM19.4692 11.25H16.4849C16.4348 12.4914 16.2615 13.6732 15.9861 14.7581C16.6829 15.0026 17.326 15.2922 17.9028 15.6199C18.7762 14.3595 19.3359 12.8652 19.4692 11.25ZM14.2638 18.6776C15.2857 18.2065 16.2041 17.5495 16.9759 16.75C16.5461 16.5273 16.0708 16.3268 15.5574 16.1521C15.2065 17.1117 14.7688 17.9648 14.2638 18.6776ZM11.25 11.25V13.8901C12.4201 13.9372 13.5374 14.094 14.5704 14.3425C14.7953 13.3913 14.9393 12.3486 14.9846 11.25H11.25ZM11.25 19.3756C12.4409 18.976 13.4733 17.6408 14.1516 15.7608C13.2524 15.561 12.2756 15.4327 11.25 15.3904V19.3756ZM1.5308 11.25C1.66405 12.8652 2.22385 14.3595 3.09723 15.6199C3.67403 15.2922 4.31706 15.0026 5.01389 14.7581C4.73849 13.6732 4.56513 12.4914 4.51506 11.25H1.5308ZM6.73616 18.6776C6.23116 17.9648 5.79353 17.1117 5.44258 16.1521C4.92925 16.3268 4.4539 16.5273 4.02408 16.75C4.79586 17.5495 5.71433 18.2065 6.73616 18.6776ZM9.75002 11.25H6.0154C6.06073 12.3486 6.20469 13.3913 6.42959 14.3425C7.46265 14.094 8.57983 13.9372 9.75002 13.8901V11.25ZM9.75002 19.3756V15.3904C8.7244 15.4327 7.74757 15.561 6.84842 15.7608C7.52674 17.6408 8.55903 18.976 9.75002 19.3756Z"
+                                            fill="#9F9BBF" />
+                                    </svg>
+                                    <select class="form-select sb-inp-1 popularity-select">
+                                        <option selected="">Global</option>
+                                        <option value="US">US</option>
+                                        <option value="Germany">Germany</option>
+                                    </select>
+                                </div>
+                                <div class="position-relative sb-flex-4">
+                                    <select class="form-select sb-inp-1" style="min-width: 100px;">
+                                        <option selected="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-content py-md-4 py-2" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="tab-2" role="tabpanel"
@@ -629,7 +736,6 @@
                                                     class="table table-separated table-borderless table-referrals table-activity ps-3">
                                                     <thead>
                                                         <th><span class="ps-lg-5">Name</span></th>
-                                                        <th><span>Type</span></th>
                                                         <th><span>User</span></th>
                                                         <th>Providers</th>
                                                         <th>Time</th>
@@ -642,13 +748,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -679,13 +783,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -716,13 +818,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -763,7 +863,6 @@
                                                     class="table table-separated table-borderless table-referrals table-activity ps-3">
                                                     <thead>
                                                         <th><span class="ps-lg-5">Name</span></th>
-                                                        <th><span>Type</span></th>
                                                         <th><span>User</span></th>
                                                         <th>Providers</th>
                                                         <th>Time</th>
@@ -776,13 +875,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -813,13 +910,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -850,13 +945,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -897,7 +990,6 @@
                                                     class="table table-separated table-borderless table-referrals table-activity ps-3">
                                                     <thead>
                                                         <th><span class="ps-lg-5">Name</span></th>
-                                                        <th><span>Type</span></th>
                                                         <th><span>User</span></th>
                                                         <th>Providers</th>
                                                         <th>Time</th>
@@ -910,13 +1002,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -947,13 +1037,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -984,13 +1072,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="fw-medium f-16p"><span>Award</span></div>
-                                                            </td>
-                                                            <td>
                                                                 <a href="#" onclick="openModal('user')"
                                                                     class="tar-user d-flex align-items-center gap-2 fw-medium f-16p">
                                                                     <img src="./assets/img/person.png" alt="Person"
-                                                                        class="rounded-circle" height="35" width="35">
+                                                                        class="rounded-circle d-md-inline-block d-none"
+                                                                        height="35" width="35">
                                                                     <span>Adeel Raza</span>
                                                                     <svg width="12" height="12" viewBox="0 0 12 12"
                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1180,7 +1266,7 @@
         </div>
         <div class="modal fade ss-modal" id="signinSignup" tabindex="-1" aria-labelledby="signinSignupLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn ms-auto btn-modal-close" data-bs-dismiss="modal"
@@ -1315,7 +1401,7 @@
         </div>
         <div class="modal fade user-modal" id="userModal" tabindex="-1" aria-labelledby="payModalLabel"
             aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header p-0">
                         <button type="button" class="btn ms-auto btn-modal-close btn-circle-close"
@@ -1324,17 +1410,17 @@
                         </button>
                     </div>
                     <div class="modal-body p-0 poppins">
-                        <div class="py-5 user-info mx-auto profile-user-info">
+                        <div class="py-4 user-info mx-auto profile-user-info">
                             <div class="d-flex align-items-center text-center flex-column gap-4 pt-4">
                                 <img src="./assets/img/smiley-man-relaxing-outdoors1.png" alt="Person"
                                     class="rounded-circle" style="height: 115px; width: 115px; object-fit:cover;">
                                 <div class="d-flex flex-column gap-2 align-items-center w-100">
                                     <h3 class="mb-0 text-white fw-semibold f-26p">Adeel Raza</h3>
                                     <div class="ui-box">
+                                        <div class="ui-box">
                                         <div class="uii-box">
                                             <div
-                                                class="d-flex justify-content-between align-items-center p-3 uib-row fw-medium">
-                                                <span class="uib-label f-14p">Country</span>
+                                                class="d-flex justify-content-center align-items-center p-3 uib-row fw-medium">
                                                 <div class="d-flex gap-2 align-items-center f-16p uib-value">
                                                     <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png"
                                                         alt="Flag" class="rounded-circle"
@@ -1343,18 +1429,18 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="d-flex justify-content-between align-items-center p-3 uib-row fw-medium">
-                                                <span class="uib-label f-14p">Joined</span>
+                                                class="d-flex justify-content-center align-items-center p-3 uib-row fw-medium">
                                                 <div class="d-flex gap-2 align-items-center f-16p uib-value">
                                                     <span>1mo Ago</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="px-md-5 px-4 py-5 um-stat-sec">
+                        <div class="px-md-5 px-4 py-4 um-stat-sec">
                             <div class="d-flex align-items-center gap-2 mb-3 px-lg-5 px-4">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1383,7 +1469,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="px-md-5 px-4 pt-5">
+                        <div class="px-md-5 px-4 pt-4">
                             <div class="d-flex align-items-center gap-2 mb-3 px-lg-5 px-4">
                                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1470,7 +1556,7 @@
         </div>
         <div class="modal fade offer-modal" id="offerModal" tabindex="-1" aria-labelledby="payModalLabel"
             aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header p-0">
                         <button type="button" class="btn ms-auto btn-modal-close btn-circle-close"
@@ -1645,7 +1731,8 @@
                                     one knows the rail like Loram. Today, with our Loram Technologies business group,
                                 </p>
                             </div>
-                            <button class="btn om-btn rounded-pill p-md-4 p-3 fw-semibold f-22p text-white">Start Offer</button>
+                            <button class="btn om-btn rounded-pill p-md-4 p-3 fw-semibold f-22p text-white">Start
+                                Offer</button>
                         </div>
                     </div>
                 </div>
@@ -1883,6 +1970,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/dist/js/script.js?v=7"></script>
+    <script src="./assets/dist/js/script.js?v=8"></script>
 
 </html>

@@ -311,6 +311,40 @@ function checkLayout() {
     $('main').css({
         'width': 'calc(100% - ' + mainWidth + 'px)'
     });
+
+    
+    if (notificationsOpened) {
+        $('.btn-chat-noti').find('circle').css({
+            "fill": "#2568EF"
+        });
+        $('.btn-chat-noti').find('path').css({
+            "fill": "#ffffff"
+        });
+    }else{
+        $('.btn-chat-noti').find('circle').css({
+            "fill": "#19172A"
+        });
+        $('.btn-chat-noti').find('path').css({
+            "fill": "#A6A4BC"
+        });
+    }
+
+    
+    if (chatWidgetOpened) {
+        $('.btn-chat-msg').find('circle').css({
+            "fill": "#2568EF"
+        });
+        $('.btn-chat-msg').find('path').css({
+            "fill": "#ffffff"
+        });
+    }else{
+        $('.btn-chat-msg').find('circle').css({
+            "fill": "#19172A"
+        });
+        $('.btn-chat-msg').find('path').css({
+            "fill": "#A6A4BC"
+        });
+    }
 }
 function chatWindow() {
     if (notificationsOpened) {

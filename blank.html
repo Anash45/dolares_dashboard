@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css?v=7">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=8">
     </head>
 
     <body class="side-nav-expanded">
@@ -38,7 +38,7 @@
                                     d="M42.25 20.25C42.25 19.2835 41.4665 18.5 40.5 18.5H19.5C18.5335 18.5 17.75 19.2835 17.75 20.25C17.75 21.2165 18.5335 22 19.5 22H40.5C41.4665 22 42.25 21.2165 42.25 20.25ZM42.25 29C42.25 28.0335 41.4665 27.25 40.5 27.25H26.5C25.5335 27.25 24.75 28.0335 24.75 29C24.75 29.9665 25.5335 30.75 26.5 30.75H40.5C41.4665 30.75 42.25 29.9665 42.25 29ZM40.5 36C41.4665 36 42.25 36.7835 42.25 37.75C42.25 38.7165 41.4665 39.5 40.5 39.5H19.5C18.5335 39.5 17.75 38.7165 17.75 37.75C17.75 36.7835 18.5335 36 19.5 36H40.5Z"
                                     fill="#A6A4BC" />
                             </svg>
-                            <a href="#" class="d-flex align-items-center gap-2 download-btn">
+                            <a href="#" class="d-flex align-items-center gap-2 download-btn hd-btn">
                                 <img src="./assets/img/playstore-svgrepo-com 1.svg" alt="Play" style="height: 26px;">
                                 <span class="d-flex flex-column gap-0 poppins">
                                     <span class="f-14p fw-bold text-white">Download our app</span>
@@ -160,7 +160,7 @@
                         <div class="d-lg-flex d-none align-items-center">
                             <!-- Chat button -->
                             <div class="ps-0">
-                                <button class="btn btn-chat pe-0" onclick="notificationsWindow()">
+                                <button class="btn btn-chat pe-0 btn-chat-noti" onclick="notificationsWindow()">
                                     <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="29.5" cy="29.5" r="29.5" fill="#19172A" />
@@ -175,7 +175,7 @@
                             </div>
                             <!-- Chat button -->
                             <div class="ps-0">
-                                <button class="btn btn-chat" onclick="chatWindow()">
+                                <button class="btn btn-chat btn-chat-msg" onclick="chatWindow()">
                                     <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="29.5" cy="29.5" r="29.5" fill="#2568EF" />
@@ -208,6 +208,13 @@
                     <div class="py-4 ps-4 pe-3 d-flex flex-column flex-grow-1 poppins">
                         <nav class="px-0 d-flex flex-column gap-4 mb-2">
                             <ul class="navbar-nav gap-2">
+                                <li class="nav-item"> 
+                                    <div class="position-relative search-offers-cont py-2">
+                                        <i class="fa fa-search"></i>
+                                        <input type="search" name="search-offers" id="search-offers" class="form-control bg-transparent so-inp" placeholder="Search offers">
+                                    </div>
+                                </li>
+                                <li class="nav-border my-3"></li>
                                 <li class="nav-item px-lg-4 expand-hidden">
                                     <span class="fw-semibold sn-title d-inline-block mb-2">General</span>
                                 </li>
@@ -236,7 +243,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./cashout.html">
+                                    <a class="nav-link" href="./withdraw.html">
                                         <svg width="18" height="16" viewBox="0 0 18 16" fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -631,14 +638,14 @@
                 <a class="m-nav-link py-2 px-1" onclick="sidebarMenu(event)">
                     <i class="fa fa-bars"></i> <span>Menu</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./withdraw.html">
-                    <i class="fa-regular fa-credit-card"></i> <span>Withdraw</span>
+                <a class="m-nav-link py-2 px-1" href="./affiliate.html">
+                    <i class="fa-regular fa-dollar"></i> <span>Earn</span>
                 </a>
-                <a class="m-nav-link py-2 px-1" href="./leaderboard.html">
-                    <i class="fa-regular fa-star"></i> <span>Leaders</span>
+                <a class="m-nav-link py-2 px-1" href="./lobby.html">
+                    <i class="fa fa-horse"></i> <span>Lobby</span>
                 </a>
                 <a class="m-nav-link py-2 px-1" href="./rewards.html">
-                    <i class="fa fa-gift"></i> <span>Reward</span>
+                    <i class="fa fa-gift"></i> <span>Rewards</span>
                 </a>
                 <a class="m-nav-link py-2 px-1" onclick="chatWindow()" href="#">
                     <i class="fa-regular fa-message"></i> <span>Chat</span>
@@ -647,7 +654,7 @@
         </div>
         <div class="modal fade ss-modal" id="signinSignup" tabindex="-1" aria-labelledby="signinSignupLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn ms-auto btn-modal-close" data-bs-dismiss="modal"
@@ -782,7 +789,7 @@
         </div>
         <div class="modal fade user-modal" id="userModal" tabindex="-1" aria-labelledby="payModalLabel"
             aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header p-0">
                         <button type="button" class="btn ms-auto btn-modal-close btn-circle-close"
@@ -791,17 +798,17 @@
                         </button>
                     </div>
                     <div class="modal-body p-0 poppins">
-                        <div class="py-5 user-info mx-auto profile-user-info">
+                        <div class="py-4 user-info mx-auto profile-user-info">
                             <div class="d-flex align-items-center text-center flex-column gap-4 pt-4">
                                 <img src="./assets/img/smiley-man-relaxing-outdoors1.png" alt="Person"
                                     class="rounded-circle" style="height: 115px; width: 115px; object-fit:cover;">
                                 <div class="d-flex flex-column gap-2 align-items-center w-100">
                                     <h3 class="mb-0 text-white fw-semibold f-26p">Adeel Raza</h3>
                                     <div class="ui-box">
+                                        <div class="ui-box">
                                         <div class="uii-box">
                                             <div
-                                                class="d-flex justify-content-between align-items-center p-3 uib-row fw-medium">
-                                                <span class="uib-label f-14p">Country</span>
+                                                class="d-flex justify-content-center align-items-center p-3 uib-row fw-medium">
                                                 <div class="d-flex gap-2 align-items-center f-16p uib-value">
                                                     <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png"
                                                         alt="Flag" class="rounded-circle"
@@ -810,18 +817,18 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="d-flex justify-content-between align-items-center p-3 uib-row fw-medium">
-                                                <span class="uib-label f-14p">Joined</span>
+                                                class="d-flex justify-content-center align-items-center p-3 uib-row fw-medium">
                                                 <div class="d-flex gap-2 align-items-center f-16p uib-value">
                                                     <span>1mo Ago</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="px-md-5 px-4 py-5 um-stat-sec">
+                        <div class="px-md-5 px-4 py-4 um-stat-sec">
                             <div class="d-flex align-items-center gap-2 mb-3 px-lg-5 px-4">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -850,7 +857,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="px-md-5 px-4 pt-5">
+                        <div class="px-md-5 px-4 pt-4">
                             <div class="d-flex align-items-center gap-2 mb-3 px-lg-5 px-4">
                                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1167,6 +1174,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/dist/js/script.js?v=7"></script>
+    <script src="./assets/dist/js/script.js?v=8"></script>
 
 </html>
