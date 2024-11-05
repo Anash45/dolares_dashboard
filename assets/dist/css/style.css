@@ -101,10 +101,6 @@ body {
     display: block;
 }
 
-.roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
 .inter {
     font-family: 'Inter', sans-serif;
 }
@@ -1360,8 +1356,8 @@ img.lang-flag {
 }
 
 .ob-simple {
-    height: 200px;
-    width: 135px;
+    height: 211px;
+    width: 145px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2424,6 +2420,11 @@ body:not(.side-nav-expanded) .sidebar
 header .country-slct{
     display: none;
 }
+
+
+header .country-slct .sb-inp-1{
+    background-color: #19172A;
+}
 .chat-widget {
     width: 360px;
     max-width: 100%;
@@ -3068,7 +3069,7 @@ span.select2-dropdown.select2-dropdown--below {
 }
 
 .select2-results__options {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .offers-filtered .filter-offers {
@@ -3144,8 +3145,13 @@ span.select2-dropdown.select2-dropdown--below {
 
 .balance-dropdown .balance-status {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     color: rgba(204, 202, 219, 1);
+}
+
+.balance-dropdown .dropdown-toggle{
+    font-weight: 400;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .balance-dropdown .form-switch .form-check-input {
@@ -5150,7 +5156,7 @@ body {
     }
 
     .ob-simple {
-        width: 120px;
+        width: 145px;
     }
 
     .site-card {

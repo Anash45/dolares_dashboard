@@ -302,7 +302,7 @@ function checkLayout() {
         });
     }
 
-    if (notificationsOpened) {
+    if (chatWidgetOpened) {
         $('header .country-slct').css({
             'display': 'block'
         });
