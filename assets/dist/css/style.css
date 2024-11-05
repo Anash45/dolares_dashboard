@@ -192,6 +192,10 @@ nav .nav-link {
     /* 20px / 16 = 1.25rem */
 }
 
+.f-21p {
+    font-size: 1.3rem !important;
+}
+
 .f-22p {
     font-size: 1.375rem !important;
     /* 22px / 16 = 1.375rem */
@@ -215,6 +219,10 @@ nav .nav-link {
 .f-30p {
     font-size: 1.875rem !important;
     /* 30px / 16 = 1.875rem */
+}
+
+.f-32p {
+    font-size: 2rem !important;
 }
 
 
@@ -464,7 +472,7 @@ img.lang-flag {
 }
 
 .mobile-nav {
-    background-color: var(--lightpurple-lightdark);
+    background-color: #0D0B1F;
     display: block;
     position: fixed;
     width: 100%;
@@ -478,7 +486,7 @@ img.lang-flag {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--lighterdark-white) !important;
+    color: rgba(204, 202, 219, 1) !important;
     font-size: 0.875rem;
 }
 
@@ -525,9 +533,8 @@ img.lang-flag {
     display: flex;
     align-items: center;
     gap: 8px;
-
     font-weight: 500 !important;
-    font-size: 18px !important;
+    font-size: 1rem !important;
     color: rgba(204, 202, 219, 1) !important;
 }
 
@@ -1433,10 +1440,33 @@ img.lang-flag {
 }
 
 .rc-img {
-    width: 135px;
+    width: 145px;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+body:not(.side-nav-expanded) .sidebar
+.so-inp::placeholder{
+    color: transparent;
+}
+
+body:not(.side-nav-expanded) .sidebar
+.so-inp{
+    padding: 10px !important;
+    width: 50px;
+    margin: 0 auto;
+}
+
+body:not(.side-nav-expanded) .sidebar
+.search-offers-cont .fa{
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body:not(.side-nav-expanded) .sidebar
+.search-offers-cont{
+    padding: 0 !important;
 }
 
 .rc-pill {
@@ -2391,11 +2421,14 @@ img.lang-flag {
     background-color: #1E40AF !important;
 }
 
+header .country-slct{
+    display: none;
+}
 .chat-widget {
     width: 360px;
     max-width: 100%;
     position: fixed;
-    z-index: 9;
+    z-index: 7;
     right: -360px;
     bottom: 0;
     background-color: #19172A;
@@ -2873,6 +2906,10 @@ img.lang-flag {
     padding: 8px;
 }
 
+.dropdown-menu{
+    z-index: 11;
+}
+
 .os-dropdown .item-checkbox {
     margin-left: auto;
     height: 18px;
@@ -3106,9 +3143,9 @@ span.select2-dropdown.select2-dropdown--below {
 }
 
 .balance-dropdown .balance-status {
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 600;
-    color: rgba(159, 155, 191, 1);
+    color: rgba(204, 202, 219, 1);
 }
 
 .balance-dropdown .form-switch .form-check-input {
@@ -3137,10 +3174,10 @@ span.select2-dropdown.select2-dropdown--below {
 
 .profile-dropdown .dropdown-item {
     border-radius: 0.25rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 8px !important;
     border-radius: 100px;
-    color: #BEC7D9;
+    color: rgba(204, 202, 219, 1);
 }
 
 .profile-dropdown .dropdown-item:hover,
@@ -3840,7 +3877,7 @@ span.select2-dropdown.select2-dropdown--below {
     background-color: transparent !important;
     border: 0 !important;
     color: #ffffff;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     padding: 16px;
     font-weight: 500;
 }
@@ -3849,7 +3886,7 @@ span.select2-dropdown.select2-dropdown--below {
     background-color: rgba(13, 11, 31, 1);
     color: rgba(204, 202, 219, 1);
     font-weight: 600;
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     padding: 16px;
     border: 0 !important;
 }
@@ -4960,7 +4997,7 @@ body {
     }
 
     .page-title {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
     }
 
     .sb-btn-primary,
@@ -4983,6 +5020,15 @@ body {
 
     .home-offer {
         zoom: 0.9;
+    }
+
+    .table-separated.table-aff-general tbody tr th,
+    .table-separated.table-aff-general tbody tr td{
+        font-size: 1rem !important;
+    }
+
+    .nav-down {
+        top: 85px;
     }
 }
 
@@ -5112,6 +5158,12 @@ body {
     }
 
     .member-cards {
+        height: 280px;
         zoom: 0.75;
+    }
+
+    .mc-name img{
+        display: none;
+        font-size: 1.125rem;
     }
 }

@@ -117,12 +117,6 @@ $(document).ready(function () {
     $('.sidebar-toggler').on('click', function () {
         openSidebar();
     })
-    $('.sidebar').on('click', function (event) {
-        // Check if the clicked element is not inside .side-nav
-        if (!$(event.target).closest('.side-nav').length) {
-            closeSidebar();
-        }
-    });
     let theme = window.localStorage.getItem('theme');
     changeTheme(theme);
 
@@ -305,6 +299,16 @@ function checkLayout() {
     } else {
         $('body').css({
             'overflow-y': 'auto'
+        });
+    }
+
+    if (notificationsOpened) {
+        $('header .country-slct').css({
+            'display': 'block'
+        });
+    }else{
+        $('header .country-slct').css({
+            'display': 'none'
         });
     }
 
