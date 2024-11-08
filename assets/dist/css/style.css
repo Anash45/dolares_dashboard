@@ -4598,10 +4598,10 @@ body {
 
 @media (max-width: 992px) {
     .wrapper{
-        padding-top: 100px;
+        padding-top: 82px;
     }
     .nav-down {
-        top: 100px;
+        top: 82px;
     }
 
     .navbar-brand .expand-hidden {
@@ -5035,10 +5035,6 @@ body {
     .table-separated.table-aff-general tbody tr th,
     .table-separated.table-aff-general tbody tr td{
         font-size: 1rem !important;
-    }
-
-    .nav-down {
-        top: 85px;
     }
 
     .oc-recently .slick-arrows{
