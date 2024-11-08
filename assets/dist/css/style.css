@@ -4598,7 +4598,7 @@ body {
 
 @media (max-width: 992px) {
     .wrapper{
-        padding-top: 75px;
+        padding-top: 100px;
     }
     .nav-down {
         top: 75px;
