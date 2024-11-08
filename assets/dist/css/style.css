@@ -5036,6 +5036,22 @@ body {
     .nav-down {
         top: 85px;
     }
+
+    .oc-recently .slick-arrows{
+        display: none !important;
+    }
+
+    .user-modal .stats{
+        flex-wrap: wrap;
+    }
+
+    .user-modal .modal-dialog{
+        zoom: 0.7;
+    }
+
+    .balance-switch{
+        zoom: 0.8;
+    }
 }
 
 @media (max-width: 576px) {
