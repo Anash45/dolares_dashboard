@@ -270,7 +270,7 @@ function changeBalance() {
     if (checkbox.is(':checked')) {
         $('.balance').hide();
         $('.pending-balance').show();
-        label.html('Pending Balance');
+        label.html('Pending');
     } else {
         $('.balance').show();
         $('.pending-balance').hide();
@@ -303,11 +303,11 @@ function checkLayout() {
     }
 
     if (chatWidgetOpened) {
-        $('header .country-slct').css({
+        $('header .hidden-part').css({
             'display': 'block'
         });
     }else{
-        $('header .country-slct').css({
+        $('header .hidden-part').css({
             'display': 'none'
         });
     }

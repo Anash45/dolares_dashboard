@@ -348,11 +348,16 @@ nav .nav-link i {
 .f-logo {
     height: 30px;
 }
-
+.view-link {
+    padding: 6px 12px;
+    display: inline-block;
+    border: 1px solid rgba(204, 202, 219, 1);
+    border-radius: 99px;
+}
 .nav-down {
     background-color: #0D0B1F !important;
     position: sticky;
-    top: 100px;
+    top: 95px;
     z-index: 5;
 }
 
@@ -496,7 +501,7 @@ img.lang-flag {
     position: relative;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 95px;
 }
 
 .tpg-label,
@@ -1356,7 +1361,7 @@ img.lang-flag {
 }
 
 .ob-simple {
-    height: 211px;
+    height: 210px;
     width: 145px;
     display: flex;
     align-items: center;
@@ -1422,7 +1427,9 @@ img.lang-flag {
     color: #E0E7EF;
     background-color: #1E293B;
 }
-
+.hidden-part{
+    display: none;
+}
 .offers{
     zoom: 0.9;
 }
@@ -1436,6 +1443,7 @@ img.lang-flag {
 }
 
 .rc-img {
+    height: 210px;
     width: 145px;
     display: block;
     margin: 0 auto;
@@ -1531,7 +1539,7 @@ body:not(.side-nav-expanded) .sidebar
 
 
 .rc-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #FFFFFF;
 }
@@ -1570,7 +1578,7 @@ body:not(.side-nav-expanded) .sidebar
     transform: translateX(-50%);
     bottom: 30px;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     text-align: center;
     width: 100%;
 }
@@ -2417,13 +2425,12 @@ body:not(.side-nav-expanded) .sidebar
     background-color: #1E40AF !important;
 }
 
-header .country-slct{
-    display: none;
-}
-
-
 header .country-slct .sb-inp-1{
     background-color: #19172A;
+}
+
+header .popularity-select{
+    padding: 18px 20px 18px 50px !important;
 }
 .chat-widget {
     width: 360px;
@@ -5172,7 +5179,7 @@ body {
     }
 
     .ob-simple {
-        width: 145px;
+        width: 160px;
     }
 
     .site-card {
