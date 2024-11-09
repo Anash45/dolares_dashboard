@@ -3167,11 +3167,11 @@ span.select2-dropdown.select2-dropdown--below {
 }
 
 .navbar-dropdowns .btn {
-    background-color: #19172A;
-    border: 0;
-    color: rgba(204, 202, 219, 1);
-    border-radius: 100px;
-    height: 59px;
+    background-color: #19172A !important;
+    border: 0 !important;
+    color: rgba(204, 202, 219, 1) !important;
+    border-radius: 100px !important;
+    height: 59px !important;
 }
 
 .navbar-dropdowns .dropdown-menu {
