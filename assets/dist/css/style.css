@@ -4859,6 +4859,13 @@ body {
         height: 70px !important;
         width: 70px !important;
     }
+    .user-modal .profile-user-info{
+        padding-top: 0 !important;
+    }
+
+    .user-modal .uib-row{
+        padding: 12px !important;
+    }
 }
 
 @media (max-width: 768px) {
