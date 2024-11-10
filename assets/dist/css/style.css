@@ -4813,6 +4813,52 @@ body {
         z-index: 10;
         border-radius: 0 !important;
     }
+    .user-modal *{
+        font-size: 98% !important;
+    }
+    .um-stat{
+        padding: 12px !important;
+        flex-shrink: 1;
+        width: calc(50% - 8px) !important;
+    }
+    .um-stat-sec{
+        padding: 20px 12px !important;
+    }
+    .um-stat:last-of-type{
+        flex-grow: 2 !important;
+    }
+    .user-modal .stats{
+        gap: 8px !important;
+    }
+
+    .user-modal .site-card{
+        padding: 0 12px !important;
+    }
+
+    .user-modal .um-stat-sec~div{
+        padding-top: 20px !important;
+    }
+
+    .um-pagination{
+        margin-top: 0 !important;
+        transform: scale(0.7);
+    }
+    .table-separated.table-user-modal tbody tr td{
+        padding: 12px;
+        font-size: 14px !important;
+    }
+
+    .user-modal div>svg{
+        height: 22px;
+    }
+
+    .user-modal .profile-user-info>div{
+        gap: 8px !important;
+    }
+    .user-modal .profile-user-info>div> .rounded-circle{
+        height: 70px !important;
+        width: 70px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -5050,10 +5096,6 @@ body {
 
     .user-modal .stats{
         flex-wrap: wrap;
-    }
-
-    .user-modal .modal-dialog{
-        zoom: 0.7;
     }
 
     .balance-switch{
