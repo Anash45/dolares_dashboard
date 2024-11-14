@@ -4845,11 +4845,37 @@ body {
         margin-top: 0 !important;
         transform: scale(0.7);
     }
-    .table-separated.table-user-modal tbody tr td{
-        padding: 12px;
+    .table-separated tbody td,
+    .table-separated thead th{
+        padding: 12px !important;
         font-size: 14px !important;
     }
 
+    .table-separated tbody td .f-16p{
+        font-size: 14px !important;
+    }
+
+    
+    .table-separated tbody td:first-child{
+        padding-left: 20px !important;
+    }
+    .table-separated tbody td:last-child{
+        padding-right: 20px !important;
+    }
+
+    .hp-mobile .help-btn img{
+        border-radius: 100px;
+        border: 1px solid #0D0B1F;
+    }
+
+    .chat-widget .hp-mobile{
+        background-color: #121023;
+    }
+
+    .rc-title,
+    .ob-name{
+        font-size: 12px !important;
+    }
     .user-modal div>svg{
         height: 22px;
     }
@@ -4976,10 +5002,6 @@ body {
 
     .om-top {
         padding: 48px 24px;
-    }
-
-    .table-separated {
-        zoom: 0.70;
     }
 
     .lc-content {

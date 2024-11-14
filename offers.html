@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./assets/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/slick/slick.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="./assets/dist/css/style.css?v=13">
+        <link rel="stylesheet" href="./assets/dist/css/style.css?v=14">
     </head>
 
     <body class="side-nav-expanded">
@@ -2154,9 +2154,19 @@
             </div>
         </div>
         <aside class="chat-widget inter" id="chat-widget">
-            <div class="chat-opener" onclick="chatWindow()">
-                <i class="fa fa-arrow-left co-left"></i>
-                <i class="fa fa-arrow-right co-right"></i>
+            <div class="hidden-part hp-mobile" style="display: block;">
+                <div class="d-flex gap-2 align-items-center justify-content-around p-3">
+                    <div class="position-relative country-slct">
+                        <img src="./assets/img/flags/de.png" alt="Sort Icon" class="sb-inp-icon">
+                        <select class="form-select sb-inp-1 popularity-select">
+                            <option selected="Germany">Germany</option>
+                            <option value="International">International</option>
+                        </select>
+                    </div>
+                    <div class="help-btn">
+                        <img src="./assets/img/help.svg" alt="Help">
+                    </div>
+                </div>
             </div>
             <div class="flex-grow-1 overflow-auto cw-tabs-cont">
                 <div class="tab-content" id="pills-tabContent">
@@ -2385,6 +2395,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/dist/js/script.js?v=13"></script>
+    <script src="./assets/dist/js/script.js?v=14"></script>
 
 </html>
