@@ -5157,6 +5157,10 @@ body {
     .balance-switch{
         zoom: 0.8;
     }
+
+    .dont-scroll{
+        overflow: hidden !important;
+    }
 }
 
 @media (max-width: 576px) {

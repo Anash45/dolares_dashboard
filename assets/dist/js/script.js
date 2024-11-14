@@ -293,23 +293,21 @@ function checkLayout() {
     }
     if (navSidebarOpened) {
         mainWidth = mainWidth + 0;
-        $('body').css({
-            'overflow-y': 'hidden'
-        });
+        $('body').addClass('dont-scroll');
     } else {
-        $('body').css({
-            'overflow-y': 'auto'
-        });
+        $('body').removeClass('dont-scroll');
     }
 
     if (chatWidgetOpened) {
         $('header .hidden-part').css({
             'display': 'block'
         });
+        $('body').addClass('dont-scroll');
     }else{
         $('header .hidden-part').css({
             'display': 'none'
         });
+        $('body').removeClass('dont-scroll');
     }
 
     $('main').css({
@@ -324,6 +322,7 @@ function checkLayout() {
         $('.btn-chat-noti').find('path').css({
             "fill": "#ffffff"
         });
+        $('body').addClass('dont-scroll');
     }else{
         $('.btn-chat-noti').find('circle').css({
             "fill": "#19172A"
@@ -331,6 +330,7 @@ function checkLayout() {
         $('.btn-chat-noti').find('path').css({
             "fill": "#A6A4BC"
         });
+        $('body').removeClass('dont-scroll');
     }
 
     
