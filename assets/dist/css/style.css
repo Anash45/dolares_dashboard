@@ -5159,6 +5159,8 @@ body {
     }
 
     .dont-scroll{
+        height: 0px !important;
+        overflow-y: hidden !important;
         overflow: hidden !important;
     }
 }
