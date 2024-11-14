@@ -4850,7 +4850,27 @@ body {
         padding: 12px !important;
         font-size: 14px !important;
     }
+    
+    .table-separated.table-user-modal tbody tr td,
+    .table-separated.table-user-modal thead tr th{
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+    .tag-row .fw-semibold{
+        font-weight: 500 !important;
+    }
 
+    .table-separated.table-aff-general{
+        padding-left: 30px !important;
+    }
+
+    .tag-tier{
+        font-size: 14px !important;
+    }
+    .tag-comission{
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+    }
     .table-separated tbody td .f-16p{
         font-size: 14px !important;
     }
@@ -5023,8 +5043,13 @@ body {
         content: unset;
     }
 
+    .tag-row td:first-child::before{
+        height: 20px;
+        width: 20px;
+        left: 5px;
+    }
     .tag-row::after {
-        height: calc(100% + -17px);
+        height: calc(100% + -12px);
         top: 60%;
         left: 0;
         transform: translateY(6px) translateX(-19px);
@@ -5265,7 +5290,16 @@ body {
 
     .member-cards {
         height: 280px;
-        zoom: 0.75;
+    }
+    .mc-name{
+        font-size: 16px !important;
+    }
+    .mc-points{
+        font-size: 15px !important;
+    }
+
+    .standing-icon{
+        height: 24px !important;
     }
 
     .mc-name img{
