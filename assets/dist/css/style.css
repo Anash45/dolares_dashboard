@@ -4914,6 +4914,10 @@ body {
     .user-modal .uib-row{
         padding: 12px !important;
     }
+
+    .table-separated,body{
+        zoom: unset !important;
+    }
 }
 
 @media (max-width: 768px) {
