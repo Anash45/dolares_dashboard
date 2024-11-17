@@ -348,7 +348,7 @@ function checkLayout() {
         });
     }
 
-    if(chatWidgetOpened || navSidebarOpened){
+    if(chatWidgetOpened || navSidebarOpened || notificationsOpened){
         $('body').addClass('dont-scroll');
     }else{
         $('body').removeClass('dont-scroll');
