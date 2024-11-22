@@ -294,7 +294,7 @@ nav .nav-link i {
 }
 
 .f-bottom * {
-    color: rgba(204, 202, 219, 1);
+    color: #fff;
 }
 
 .f-extra {
@@ -338,11 +338,7 @@ nav .nav-link i {
 }
 .f-link {
     text-decoration: none;
-    color: rgba(204, 202, 219, 1);
-}
-
-.f-link:hover {
-    color: #2568EF;
+    color: rgba(204, 202, 219, 1) !important;
 }
 
 .f-logo {
