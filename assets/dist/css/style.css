@@ -2048,7 +2048,8 @@ body:not(.side-nav-expanded) .sidebar
     background-image: linear-gradient(to top, #0f172a, #1e293b, #1e293b) !important;
     color: #FFFFFF;
 }
-.simple-position{
+.simple-position,
+.badge-position{
     width: 36px;
     display: flex;
     align-items: center;
@@ -4475,6 +4476,10 @@ body {
     zoom: 0.85;
 }
 
+
+.standing-icon{
+    width: 24px;
+}
 @media (min-width: 992px) {
     .user-modal .modal-content {
         zoom: 0.75;
@@ -4921,6 +4926,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    main{
+        padding-bottom: 80px;
+    }
+    footer{
+        display: none !important;
+    }
     .offer-boxes-cont {
         zoom: 0.9;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
