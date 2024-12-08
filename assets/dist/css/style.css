@@ -4582,7 +4582,7 @@ body {
     }
 
     .lobby-card {
-        width: 550px !important;
+        width: 100% !important;
     }
 
     .lobby-cards .slick-list {
@@ -4598,6 +4598,10 @@ body {
         float: unset;
         height: unset;
         display: flex;
+    }
+
+    .lobby-cards .slick-slide>div{
+        width: 100%;
     }
 
     .lobby-cards .slick-slide .lobby-card {

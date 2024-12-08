@@ -48,36 +48,25 @@ $(document).ready(function () {
 
     if ($('.lobby-cards').length > 0) {
         let lobbyCards = false;
-        $(window).on('resize', function () {
-            if ($(window).width() < 1200) {
-                if (!lobbyCards) {
-                    $('.lobby-cards').slick({
-                        slidesToShow: 1, // Show 2 slides at a time
-                        slidesToScroll: 1, // Scroll 1 slide at a time
-                        autoplay: false, // Autoplay enabled
-                        autoplaySpeed: 2000, // Autoplay speed in milliseconds
-                        prevArrow: false, // Hide previous arrow
-                        nextArrow: false, // Hide next arrow
-                        dots: false, // Hide navigation dots
-                        draggable: true, // Enable dragging
-                        infinite: true, // Infinite looping
-                        variableWidth: true, // Variable width based on content width
-                    });
-                    lobbyCards = true;
-                }
-            } else {
-                if (lobbyCards) {
-                    window.location.reload();
-                    lobbyCards = false;
-                }
-            }
-        }).trigger('resize');
+        $('.lobby-cards').slick({
+            slidesToShow: 1, // Show 2 slides at a time
+            slidesToScroll: 1, // Scroll 1 slide at a time
+            autoplay: false, // Autoplay enabled
+            autoplaySpeed: 2000, // Autoplay speed in milliseconds
+            prevArrow: false, // Hide previous arrow
+            nextArrow: false, // Hide next arrow
+            dots: false, // Hide navigation dots
+            draggable: true, // Enable dragging
+            infinite: true, // Infinite looping
+            variableWidth: false, // Variable width based on content width
+        });
+        lobbyCards = true;
 
     }
     if ($('.reward-days').length > 0) {
         let weeklyCards = false;
         $(window).on('resize', function () {
-            if ($(window).width() < 992) {
+            if ($(window).width() > 1200) {
                 if (!weeklyCards) {
                     $('.reward-days').slick({
                         slidesToShow: 1, // Show 2 slides at a time
@@ -358,7 +347,15 @@ function chatWindow() {
     if (notificationsOpened) {
         notificationsWindow();
     }
-    $('#chat-widget').toggleClass('chat-shown');
+    if(chatWidgetOpened){
+        if(helpTabShown){
+            switchTab('messages-tab');
+        }else{
+            $('#chat-widget').toggleClass('chat-shown');
+        }
+    }else{
+        $('#chat-widget').toggleClass('chat-shown');
+    }
     if ($('#chat-widget').hasClass('chat-shown')) {
         $('.nci-show').show();
         $('.nci-hide').hide();
@@ -388,6 +385,19 @@ function notificationsWindow() {
     checkLayout();
 }
 
+let helpTabShown = false;
+
+function switchTab(tabId) {
+    console.log(tabId);
+    let targetTab = $('#' + tabId);
+    targetTab.closest('.tab-content').find('.tab-pane').removeClass('active show');
+    targetTab.addClass('active show');
+    if(tabId == 'help-tab'){
+        helpTabShown = true;
+    }else{
+        helpTabShown = false;
+    }
+}
 function sideNavExpand() {
     $('body').toggleClass('side-nav-expanded');
     if ($('body').hasClass('side-nav-expanded')) {
